@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Elliot Snow-Kropla on Elliot Snow-Kropla</title>
+    <link>http://ejsk.ca/index.xml</link>
+    <description>Recent content in Elliot Snow-Kropla on Elliot Snow-Kropla</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Elliot Snow-Kropla</copyright>
+    <lastBuildDate>Fri, 07 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hairy Little Buggers</title>
+      <link>http://ejsk.ca/project/hlb/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://ejsk.ca/project/hlb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cosmic Rays, aerosol formation and cloud-condensation nuclei: sensitivities to model uncertainties</title>
+      <link>http://ejsk.ca/publication/cosmic_rays/</link>
+      <pubDate>Fri, 29 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://ejsk.ca/publication/cosmic_rays/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Everything you wanted to know about Quantum Computing but were afraid to ask</title>
+      <link>http://ejsk.ca/talk/aupac2011/</link>
+      <pubDate>Thu, 03 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://ejsk.ca/talk/aupac2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cosmic ray effects on cloud formation</title>
+      <link>http://ejsk.ca/talk/cupc2010/</link>
+      <pubDate>Wed, 20 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://ejsk.ca/talk/cupc2010/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
