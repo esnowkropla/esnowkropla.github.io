@@ -11,6 +11,16 @@
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>First Blog Entry</title>
+      <link>http://ejsk.ca/post/first-blog-entry/</link>
+      <pubDate>Fri, 07 Jul 2017 17:17:40 -0400</pubDate>
+      
+      <guid>http://ejsk.ca/post/first-blog-entry/</guid>
+      <description>&lt;p&gt;Alright, I&amp;rsquo;ve rejiggered my website yet again.  This actually has some functionality, so maybe I&amp;rsquo;ll actually manage to stick to it this time.  Then again, the mark of a true academic is to neglect their website.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Hairy Little Buggers</title>
       <link>http://ejsk.ca/project/hlb/</link>
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
