@@ -39,11 +39,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://ejsk.ca/post/excelsior/">
+  <link rel="canonical" href="http://ejsk.ca/post/rust-web2/">
 
   
 
-  <title>Excelsior | Elliot Snow-Kropla</title>
+  <title>Thoughts on Rust Web-Development | Elliot Snow-Kropla</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -156,14 +156,14 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Excelsior</h1>
+    <h1 itemprop="name">Thoughts on Rust Web-Development</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
-    <time datetime="2017-07-10 09:48:29 -0400 EDT" itemprop="datePublished">
-      Mon, Jul 10, 2017
+    <time datetime="2017-10-28 18:32:47 -0400 EDT" itemprop="datePublished">
+      Sat, Oct 28, 2017
     </time>
   </span>
 
@@ -175,7 +175,13 @@
   <span class="article-tags">
     <i class="fa fa-tags"></i>
     
-    <a href="/tags/poetry">poetry</a
+    <a href="/tags/rust">rust</a
+    >, 
+    
+    <a href="/tags/webdev">webdev</a
+    >, 
+    
+    <a href="/tags/programming">programming</a
     >
     
   </span>
@@ -188,35 +194,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fejsk.ca%2fpost%2fexcelsior%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fejsk.ca%2fpost%2frust-web2%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Excelsior&amp;url=http%3a%2f%2fejsk.ca%2fpost%2fexcelsior%2f"
+         href="https://twitter.com/intent/tweet?text=Thoughts%20on%20Rust%20Web-Development&amp;url=http%3a%2f%2fejsk.ca%2fpost%2frust-web2%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fejsk.ca%2fpost%2fexcelsior%2f&amp;title=Excelsior"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fejsk.ca%2fpost%2frust-web2%2f&amp;title=Thoughts%20on%20Rust%20Web-Development"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fejsk.ca%2fpost%2fexcelsior%2f&amp;title=Excelsior"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fejsk.ca%2fpost%2frust-web2%2f&amp;title=Thoughts%20on%20Rust%20Web-Development"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Excelsior&amp;body=http%3a%2f%2fejsk.ca%2fpost%2fexcelsior%2f">
+         href="mailto:?subject=Thoughts%20on%20Rust%20Web-Development&amp;body=http%3a%2f%2fejsk.ca%2fpost%2frust-web2%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -229,62 +235,19 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      <pre><code class="language-text">The shades of night were falling fast,
-As through an Alpine village passed
-A youth, who bore, 'mid snow and ice,
-A banner with the strange device,
-    Excelsior!
-	
-His brow was sad; his eye beneath,
-Flashed like a falchion from its sheath,
-And like a silver clarion rung
-The accents of that unknown tongue,
-    Excelsior!
+      
 
-In happy homes he saw the light
-Of household fires gleam warm and bright;
-Above, the spectral glaciers shone,
-And from his lips escaped a groan,
-    Excelsior!
+<p>This entry will be a little scattershot, just some miscellaneous thoughts and impressions.</p>
 
-&quot;Try not the Pass!&quot; the old man said;
-&quot;Dark lowers the tempest overhead,
-The roaring torrent is deep and wide!&quot;
-And loud that clarion voice replied,
-    Excelsior!
+<h2 id="interacting-with-apis">Interacting with APIs</h2>
 
-&quot;Oh stay,&quot; the maiden said, &quot;and rest
-They weary head upon this breast!&quot;
-A tear stood in his bright blue eye,
-But still he answered, with a sigh,
-    Excelsior!
+<p>It&rsquo;s a little inconvenient to be making a lot of little structs for each feature of an API; where in JavaScript or Python you would have a dictionary, if you want type safety you need to make a struct with the proper fields. Strictly speaking you don&rsquo;t <em>need</em> to; operating on <a href="https://docs.serde.rs/serde_json/#operating-on-untyped-json-values" target="_blank">untyped JSON</a> is actually fairly straightforward, but when you know that the rest of your codebase isn&rsquo;t going to crash it&rsquo;s hard to .  The <a href="https://github.com/serde-rs/json" target="_blank">serde-rs</a> library is everything I want in a JSON serialization library. There&rsquo;s not much in particular to call out, which is good in an infrastructure library; although I can say it&rsquo;s &hellip; much more ergonomic than the serialization I wrote for <a href="http://www.hairylittlebuggers.com" target="_blank">Hairy Little Buggers</a>.</p>
 
-&quot;Beware the pine-tree's withered branch!
-Beware the awful avalanche!&quot;
-This was the peasant's last Good-night,
-A voice replied, far up the height,
-    Excelsior!
+<p>I wrote about half a dozen little programs to scrape data from YouTube and Twitch as part of <a href="http://www.this link doesn't go anywhere" target="_blank">secret project</a>, as well as the main app; I would probably do one-off scraping type scripts in Python in future, with app code written in Rust.</p>
 
-At break of day, as heavenward
-The pious monks of Saint Bernard
-Uttered the oft-repeated prayer,
-A voice cried through the startled air,
-    Excelsior!
+<h2 id="type-safety">Type Safety!</h2>
 
-A traveller, by the faithful hound,
-Half-buried in the snow was found,
-Still grasping in his hand of ice
-That banner with the strange device,
-    Excelsior!
-
-There in the twilight cold and gray,
-Lifeless, but beautiful, he lay,
-And from the sky, serene and far,
-A voice fell like a falling star,
-    Excelsior!
-
--Longfellow
-</code></pre>
+<p>Rust&rsquo;s type safety gives is extremely hard to give up; working with Python I constantly have</p>
 
     </div>
   </div>
@@ -295,12 +258,12 @@ A voice fell like a falling star,
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://ejsk.ca/post/first-blog-entry/"><span
-      aria-hidden="true">&larr;</span> First Blog Entry</a></li>
+    <li class="previous"><a href="http://ejsk.ca/post/rust-web/"><span
+      aria-hidden="true">&larr;</span> Rust Web-Development, Part 1</a></li>
     
 
     
-    <li class="next"><a href="http://ejsk.ca/post/recessional/">Recessional <span
+    <li class="next"><a href="http://ejsk.ca/post/summer-lightning/">Summer Lightning <span
       aria-hidden="true">&rarr;</span></a></li>
     
   </ul>

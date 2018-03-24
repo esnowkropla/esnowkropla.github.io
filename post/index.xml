@@ -11,6 +11,46 @@
     <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Summer Lightning</title>
+      <link>http://ejsk.ca/post/summer-lightning/</link>
+      <pubDate>Fri, 09 Mar 2018 20:02:08 -0500</pubDate>
+      
+      <guid>http://ejsk.ca/post/summer-lightning/</guid>
+      <description>&lt;p&gt;A certain critic - for such men, I may regret to say, do exist - made
+the nasty remark about my last novel that it contained &amp;lsquo;all the old
+Wodehouse characters under different names&amp;rsquo;. He has probably
+now been eaten by bears, like the children who made mock of
+the prophet Elisha: but if he still survives he will not be to
+make a similar charge against &lt;em&gt;Summer Lightning&lt;/em&gt;. With my
+superior intelligence, I have outgeneralled the man this time
+by putting in all the old Wodehouse characters under the same
+names.  Pretty silly it will make him feel, I rather fancy.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on Rust Web-Development</title>
+      <link>http://ejsk.ca/post/rust-web2/</link>
+      <pubDate>Sat, 28 Oct 2017 18:32:47 -0400</pubDate>
+      
+      <guid>http://ejsk.ca/post/rust-web2/</guid>
+      <description>
+
+&lt;p&gt;This entry will be a little scattershot, just some miscellaneous thoughts and impressions.&lt;/p&gt;
+
+&lt;h2 id=&#34;interacting-with-apis&#34;&gt;Interacting with APIs&lt;/h2&gt;
+
+&lt;p&gt;It&amp;rsquo;s a little inconvenient to be making a lot of little structs for each feature of an API; where in JavaScript or Python you would have a dictionary, if you want type safety you need to make a struct with the proper fields. Strictly speaking you don&amp;rsquo;t &lt;em&gt;need&lt;/em&gt; to; operating on &lt;a href=&#34;https://docs.serde.rs/serde_json/#operating-on-untyped-json-values&#34; target=&#34;_blank&#34;&gt;untyped JSON&lt;/a&gt; is actually fairly straightforward, but when you know that the rest of your codebase isn&amp;rsquo;t going to crash it&amp;rsquo;s hard to .  The &lt;a href=&#34;https://github.com/serde-rs/json&#34; target=&#34;_blank&#34;&gt;serde-rs&lt;/a&gt; library is everything I want in a JSON serialization library. There&amp;rsquo;s not much in particular to call out, which is good in an infrastructure library; although I can say it&amp;rsquo;s &amp;hellip; much more ergonomic than the serialization I wrote for &lt;a href=&#34;http://www.hairylittlebuggers.com&#34; target=&#34;_blank&#34;&gt;Hairy Little Buggers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I wrote about half a dozen little programs to scrape data from YouTube and Twitch as part of &lt;a href=&#34;http://www.this link doesn&#39;t go anywhere&#34; target=&#34;_blank&#34;&gt;secret project&lt;/a&gt;, as well as the main app; I would probably do one-off scraping type scripts in Python in future, with app code written in Rust.&lt;/p&gt;
+
+&lt;h2 id=&#34;type-safety&#34;&gt;Type Safety!&lt;/h2&gt;
+
+&lt;p&gt;Rust&amp;rsquo;s type safety gives is extremely hard to give up; working with Python I constantly have&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Rust Web-Development, Part 1</title>
       <link>http://ejsk.ca/post/rust-web/</link>
       <pubDate>Fri, 04 Aug 2017 10:43:49 -0400</pubDate>
@@ -52,6 +92,52 @@
 &lt;p&gt;It was at this point that I considered going below even Hyper, and writing the HTTP server myself from scratch. This is silly; if I want to get anything done I shouldn&amp;rsquo;t rewrite the whole stack myself. The other alternative would be to abandon Rust and just play around with Flask; I could at least build my web apps, even if I wasn&amp;rsquo;t playing with a new(ish) language.&lt;/p&gt;
 
 &lt;p&gt;Luckily for me though, as I was searching around for the solution to my latest problem I saw a code example of &lt;a href=&#34;https://rocket.rs&#34; target=&#34;_blank&#34;&gt;Rocket&lt;/a&gt;, which I had so quickly dismissed before; and I liked what I saw! Request routing, sessions handling, state handling, with a heavy emphasis on developer experience. A fair bit of magic in the code generation to handle the routing, but implementing the traits in the request guards and the serialization was REALLY easy. Converted, I started up a new project and threw Rocket into the Cargo.toml. This is long enough, so we&amp;rsquo;ll leave off here; next week, actually building things!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Recessional</title>
+      <link>http://ejsk.ca/post/recessional/</link>
+      <pubDate>Mon, 10 Jul 2017 10:08:05 -0400</pubDate>
+      
+      <guid>http://ejsk.ca/post/recessional/</guid>
+      <description>&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;God of our fathers, known of old,
+Lord of our far-flung battle line,
+Beneath whose awful hand we hold
+Dominion over palm and pine -
+Lord God of Hosts, be with us yet,
+Lest we forget - lest we forget!
+
+The tumult and the shouting dies;
+The Captains and the Kings depart:
+Still stands thine ancient sacrifice,
+An humble and a contrite heart.
+Lord God of Hosts, be with us yet,
+Lest we forget - lest we forget!
+
+Far-called our navies melt away;
+On dune and headland sinks the fire:
+Lo, all our pomp of yesterday
+Is one with Nineveh and Tyre!
+Judge of the Nations, spare us yet,
+Lest we forget - lest we forget!
+
+If, drunk with sight of power, we loose
+Wild tongues that have not Thee in awe,
+Such boastings as the Gentiles use,
+Or lesser breeds without the Law -
+Lord God of Hosts, be with us yet,
+Lest we forget - lest we forget!
+
+For heathen heart that puts her trust
+In reeking tube and iron shard,
+All valiant dust that builds on dust,
+And guarding calls not Thee to guard,
+For frantic boast and foolish word-
+Thy Mercy on Thy People, Lord!
+
+-Rudyard Kipling
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

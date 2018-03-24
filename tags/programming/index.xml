@@ -10,6 +10,28 @@
     <atom:link href="/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Thoughts on Rust Web-Development</title>
+      <link>http://ejsk.ca/post/rust-web2/</link>
+      <pubDate>Sat, 28 Oct 2017 18:32:47 -0400</pubDate>
+      
+      <guid>http://ejsk.ca/post/rust-web2/</guid>
+      <description>
+
+&lt;p&gt;This entry will be a little scattershot, just some miscellaneous thoughts and impressions.&lt;/p&gt;
+
+&lt;h2 id=&#34;interacting-with-apis&#34;&gt;Interacting with APIs&lt;/h2&gt;
+
+&lt;p&gt;It&amp;rsquo;s a little inconvenient to be making a lot of little structs for each feature of an API; where in JavaScript or Python you would have a dictionary, if you want type safety you need to make a struct with the proper fields. Strictly speaking you don&amp;rsquo;t &lt;em&gt;need&lt;/em&gt; to; operating on &lt;a href=&#34;https://docs.serde.rs/serde_json/#operating-on-untyped-json-values&#34; target=&#34;_blank&#34;&gt;untyped JSON&lt;/a&gt; is actually fairly straightforward, but when you know that the rest of your codebase isn&amp;rsquo;t going to crash it&amp;rsquo;s hard to .  The &lt;a href=&#34;https://github.com/serde-rs/json&#34; target=&#34;_blank&#34;&gt;serde-rs&lt;/a&gt; library is everything I want in a JSON serialization library. There&amp;rsquo;s not much in particular to call out, which is good in an infrastructure library; although I can say it&amp;rsquo;s &amp;hellip; much more ergonomic than the serialization I wrote for &lt;a href=&#34;http://www.hairylittlebuggers.com&#34; target=&#34;_blank&#34;&gt;Hairy Little Buggers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I wrote about half a dozen little programs to scrape data from YouTube and Twitch as part of &lt;a href=&#34;http://www.this link doesn&#39;t go anywhere&#34; target=&#34;_blank&#34;&gt;secret project&lt;/a&gt;, as well as the main app; I would probably do one-off scraping type scripts in Python in future, with app code written in Rust.&lt;/p&gt;
+
+&lt;h2 id=&#34;type-safety&#34;&gt;Type Safety!&lt;/h2&gt;
+
+&lt;p&gt;Rust&amp;rsquo;s type safety gives is extremely hard to give up; working with Python I constantly have&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Rust Web-Development, Part 1</title>
       <link>http://ejsk.ca/post/rust-web/</link>
       <pubDate>Fri, 04 Aug 2017 10:43:49 -0400</pubDate>
