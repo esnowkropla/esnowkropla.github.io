@@ -241,13 +241,13 @@
 
 <h2 id="interacting-with-apis">Interacting with APIs</h2>
 
-<p>It&rsquo;s a little inconvenient to be making a lot of little structs for each feature of an API; where in JavaScript or Python you would have a dictionary, if you want type safety you need to make a struct with the proper fields. Strictly speaking you don&rsquo;t <em>need</em> to; operating on <a href="https://docs.serde.rs/serde_json/#operating-on-untyped-json-values" target="_blank">untyped JSON</a> is actually fairly straightforward, but when you know that the rest of your codebase isn&rsquo;t going to crash it&rsquo;s hard to .  The <a href="https://github.com/serde-rs/json" target="_blank">serde-rs</a> library is everything I want in a JSON serialization library. There&rsquo;s not much in particular to call out, which is good in an infrastructure library; although I can say it&rsquo;s &hellip; much more ergonomic than the serialization I wrote for <a href="http://www.hairylittlebuggers.com" target="_blank">Hairy Little Buggers</a>.</p>
+<p>It&rsquo;s a little inconvenient to be making a lot of little structs for each feature of an API; where in JavaScript or Python you would have a dictionary, if you want type safety you need to make a struct with the proper fields. Strictly speaking you don&rsquo;t <em>need</em> to; operating on <a href="https://docs.serde.rs/serde_json/#operating-on-untyped-json-values" target="_blank">untyped JSON</a> is actually fairly straightforward, but when you know that the rest of your codebase isn&rsquo;t going to crash the parts that aren&rsquo;t guarenteed by the compiler niggle in your brain.  The <a href="https://github.com/serde-rs/json" target="_blank">serde-rs</a> library is everything I want in a JSON serialization library. There&rsquo;s not much in particular to call out, which is good in an infrastructure library; although I can say it&rsquo;s &hellip; much more ergonomic than the serialization I wrote for <a href="http://www.hairylittlebuggers.com" target="_blank">Hairy Little Buggers</a>.</p>
 
-<p>I wrote about half a dozen little programs to scrape data from YouTube and Twitch as part of <a href="http://www.this link doesn't go anywhere" target="_blank">secret project</a>, as well as the main app; I would probably do one-off scraping type scripts in Python in future, with app code written in Rust.</p>
+<p>I wrote about half a dozen little programs to scrape data from YouTube and Twitch as part of <a href="http://www.this link doesn't go anywhere dot com" target="_blank">secret project</a>, as well as the main app; I would probably do one-off scraping type scripts in Python in future, with app code written in Rust.</p>
 
 <h2 id="type-safety">Type Safety!</h2>
 
-<p>Rust&rsquo;s type safety gives is extremely hard to give up; working with Python I constantly have</p>
+<p>Rust&rsquo;s type safety gives is extremely hard to give up; working with Python I constantly have to think harder about the inputs and outputs of my functions, becase the source and compiler isn&rsquo;t doing it for me.</p>
 
     </div>
   </div>
