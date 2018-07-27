@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wodehouse on Elliot Snow-Kropla</title>
-    <link>http://ejsk.ca/tags/wodehouse/index.xml</link>
+    <link>http://ejsk.ca/tags/wodehouse/</link>
     <description>Recent content in Wodehouse on Elliot Snow-Kropla</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Elliot Snow-Kropla</copyright>
-    <atom:link href="/tags/wodehouse/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Mar 2018 20:02:08 -0500</lastBuildDate>
+    
+	<atom:link href="http://ejsk.ca/tags/wodehouse/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Summer Lightning</title>
@@ -15,16 +18,7 @@
       <pubDate>Fri, 09 Mar 2018 20:02:08 -0500</pubDate>
       
       <guid>http://ejsk.ca/post/summer-lightning/</guid>
-      <description>&lt;p&gt;A certain critic - for such men, I may regret to say, do exist - made
-the nasty remark about my last novel that it contained &amp;lsquo;all the old
-Wodehouse characters under different names&amp;rsquo;. He has probably
-now been eaten by bears, like the children who made mock of
-the prophet Elisha: but if he still survives he will not be to
-make a similar charge against &lt;em&gt;Summer Lightning&lt;/em&gt;. With my
-superior intelligence, I have outgeneralled the man this time
-by putting in all the old Wodehouse characters under the same
-names.  Pretty silly it will make him feel, I rather fancy.&lt;/p&gt;
-</description>
+      <description>A certain critic - for such men, I may regret to say, do exist - made the nasty remark about my last novel that it contained &amp;lsquo;all the old Wodehouse characters under different names&amp;rsquo;. He has probably now been eaten by bears, like the children who made mock of the prophet Elisha: but if he still survives he will not be to make a similar charge against Summer Lightning. With my superior intelligence, I have outgeneralled the man this time by putting in all the old Wodehouse characters under the same names.</description>
     </item>
     
   </channel>

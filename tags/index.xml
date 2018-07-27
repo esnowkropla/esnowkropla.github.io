@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Elliot Snow-Kropla</title>
+    <link>http://ejsk.ca/tags/</link>
+    <description>Recent content in Tags on Elliot Snow-Kropla</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Elliot Snow-Kropla</copyright>
+    <lastBuildDate>Fri, 07 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://ejsk.ca/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Content tagged as &#39;Academic&#39;</title>
+      <link>http://ejsk.ca/tags/academic/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://ejsk.ca/tags/academic/</guid>
+      <description>Here is a list of all the content that has been tagged as academic.</description>
+    </item>
+    
+    <item>
+      <title>Games</title>
+      <link>http://ejsk.ca/tags/games/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://ejsk.ca/tags/games/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Poetry</title>
+      <link>http://ejsk.ca/tags/poetry/</link>
+      <pubDate>Fri, 09 Mar 2018 20:02:08 -0500</pubDate>
+      
+      <guid>http://ejsk.ca/tags/poetry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>http://ejsk.ca/tags/programming/</link>
+      <pubDate>Sat, 28 Oct 2017 18:32:47 -0400</pubDate>
+      
+      <guid>http://ejsk.ca/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>http://ejsk.ca/tags/rust/</link>
+      <pubDate>Sat, 28 Oct 2017 18:32:47 -0400</pubDate>
+      
+      <guid>http://ejsk.ca/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webdev</title>
+      <link>http://ejsk.ca/tags/webdev/</link>
+      <pubDate>Sat, 28 Oct 2017 18:32:47 -0400</pubDate>
+      
+      <guid>http://ejsk.ca/tags/webdev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wodehouse</title>
+      <link>http://ejsk.ca/tags/wodehouse/</link>
+      <pubDate>Fri, 09 Mar 2018 20:02:08 -0500</pubDate>
+      
+      <guid>http://ejsk.ca/tags/wodehouse/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

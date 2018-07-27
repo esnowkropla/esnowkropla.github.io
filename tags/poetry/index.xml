@@ -2,12 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Poetry on Elliot Snow-Kropla</title>
-    <link>http://ejsk.ca/tags/poetry/index.xml</link>
+    <link>http://ejsk.ca/tags/poetry/</link>
     <description>Recent content in Poetry on Elliot Snow-Kropla</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Elliot Snow-Kropla</copyright>
-    <atom:link href="/tags/poetry/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Mar 2018 20:02:08 -0500</lastBuildDate>
+    
+	<atom:link href="http://ejsk.ca/tags/poetry/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Summer Lightning</title>
@@ -15,16 +18,7 @@
       <pubDate>Fri, 09 Mar 2018 20:02:08 -0500</pubDate>
       
       <guid>http://ejsk.ca/post/summer-lightning/</guid>
-      <description>&lt;p&gt;A certain critic - for such men, I may regret to say, do exist - made
-the nasty remark about my last novel that it contained &amp;lsquo;all the old
-Wodehouse characters under different names&amp;rsquo;. He has probably
-now been eaten by bears, like the children who made mock of
-the prophet Elisha: but if he still survives he will not be to
-make a similar charge against &lt;em&gt;Summer Lightning&lt;/em&gt;. With my
-superior intelligence, I have outgeneralled the man this time
-by putting in all the old Wodehouse characters under the same
-names.  Pretty silly it will make him feel, I rather fancy.&lt;/p&gt;
-</description>
+      <description>A certain critic - for such men, I may regret to say, do exist - made the nasty remark about my last novel that it contained &amp;lsquo;all the old Wodehouse characters under different names&amp;rsquo;. He has probably now been eaten by bears, like the children who made mock of the prophet Elisha: but if he still survives he will not be to make a similar charge against Summer Lightning. With my superior intelligence, I have outgeneralled the man this time by putting in all the old Wodehouse characters under the same names.</description>
     </item>
     
     <item>
@@ -33,44 +27,7 @@ names.  Pretty silly it will make him feel, I rather fancy.&lt;/p&gt;
       <pubDate>Mon, 10 Jul 2017 10:08:05 -0400</pubDate>
       
       <guid>http://ejsk.ca/post/recessional/</guid>
-      <description>&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;God of our fathers, known of old,
-Lord of our far-flung battle line,
-Beneath whose awful hand we hold
-Dominion over palm and pine -
-Lord God of Hosts, be with us yet,
-Lest we forget - lest we forget!
-
-The tumult and the shouting dies;
-The Captains and the Kings depart:
-Still stands thine ancient sacrifice,
-An humble and a contrite heart.
-Lord God of Hosts, be with us yet,
-Lest we forget - lest we forget!
-
-Far-called our navies melt away;
-On dune and headland sinks the fire:
-Lo, all our pomp of yesterday
-Is one with Nineveh and Tyre!
-Judge of the Nations, spare us yet,
-Lest we forget - lest we forget!
-
-If, drunk with sight of power, we loose
-Wild tongues that have not Thee in awe,
-Such boastings as the Gentiles use,
-Or lesser breeds without the Law -
-Lord God of Hosts, be with us yet,
-Lest we forget - lest we forget!
-
-For heathen heart that puts her trust
-In reeking tube and iron shard,
-All valiant dust that builds on dust,
-And guarding calls not Thee to guard,
-For frantic boast and foolish word-
-Thy Mercy on Thy People, Lord!
-
--Rudyard Kipling
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>God of our fathers, known of old, Lord of our far-flung battle line, Beneath whose awful hand we hold Dominion over palm and pine - Lord God of Hosts, be with us yet, Lest we forget - lest we forget! The tumult and the shouting dies; The Captains and the Kings depart: Still stands thine ancient sacrifice, An humble and a contrite heart. Lord God of Hosts, be with us yet, Lest we forget - lest we forget!</description>
     </item>
     
     <item>
@@ -79,63 +36,7 @@ Thy Mercy on Thy People, Lord!
       <pubDate>Mon, 10 Jul 2017 09:48:29 -0400</pubDate>
       
       <guid>http://ejsk.ca/post/excelsior/</guid>
-      <description>&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;The shades of night were falling fast,
-As through an Alpine village passed
-A youth, who bore, &#39;mid snow and ice,
-A banner with the strange device,
-    Excelsior!
-	
-His brow was sad; his eye beneath,
-Flashed like a falchion from its sheath,
-And like a silver clarion rung
-The accents of that unknown tongue,
-    Excelsior!
-
-In happy homes he saw the light
-Of household fires gleam warm and bright;
-Above, the spectral glaciers shone,
-And from his lips escaped a groan,
-    Excelsior!
-
-&amp;quot;Try not the Pass!&amp;quot; the old man said;
-&amp;quot;Dark lowers the tempest overhead,
-The roaring torrent is deep and wide!&amp;quot;
-And loud that clarion voice replied,
-    Excelsior!
-
-&amp;quot;Oh stay,&amp;quot; the maiden said, &amp;quot;and rest
-They weary head upon this breast!&amp;quot;
-A tear stood in his bright blue eye,
-But still he answered, with a sigh,
-    Excelsior!
-
-&amp;quot;Beware the pine-tree&#39;s withered branch!
-Beware the awful avalanche!&amp;quot;
-This was the peasant&#39;s last Good-night,
-A voice replied, far up the height,
-    Excelsior!
-
-At break of day, as heavenward
-The pious monks of Saint Bernard
-Uttered the oft-repeated prayer,
-A voice cried through the startled air,
-    Excelsior!
-
-A traveller, by the faithful hound,
-Half-buried in the snow was found,
-Still grasping in his hand of ice
-That banner with the strange device,
-    Excelsior!
-
-There in the twilight cold and gray,
-Lifeless, but beautiful, he lay,
-And from the sky, serene and far,
-A voice fell like a falling star,
-    Excelsior!
-
--Longfellow
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>The shades of night were falling fast, As through an Alpine village passed A youth, who bore, &#39;mid snow and ice, A banner with the strange device, Excelsior! His brow was sad; his eye beneath, Flashed like a falchion from its sheath, And like a silver clarion rung The accents of that unknown tongue, Excelsior! In happy homes he saw the light Of household fires gleam warm and bright; Above, the spectral glaciers shone, And from his lips escaped a groan, Excelsior!</description>
     </item>
     
   </channel>
