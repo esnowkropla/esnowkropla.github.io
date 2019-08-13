@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Elliot Snow-Kropla</title>
-    <link>http://ejsk.ca/project/</link>
-    <description>Recent content in Projects on Elliot Snow-Kropla</description>
+    <title>Web on Elliot Snow-Kropla</title>
+    <link>http://ejsk.ca/tags/web/</link>
+    <description>Recent content in Web on Elliot Snow-Kropla</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Elliot Snow-Kropla</copyright>
     <lastBuildDate>Thu, 01 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://ejsk.ca/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://ejsk.ca/tags/web/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>http://ejsk.ca/project/runwaycalculator/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hairy Little Buggers</title>
-      <link>http://ejsk.ca/project/hlb/</link>
-      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://ejsk.ca/project/hlb/</guid>
       <description></description>
     </item>
     
