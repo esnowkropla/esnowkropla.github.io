@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>SponsorHub.io</title>
+      <link>http://ejsk.ca/project/sponsorhub/</link>
+      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://ejsk.ca/project/sponsorhub/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Runway Calculator</title>
       <link>http://ejsk.ca/project/runwaycalculator/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
