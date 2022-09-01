@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Elliot Snow-Kropla</title>
+    <link>https://ejsk.ca/projects/</link>
+    <description>Recent content in Projects on Elliot Snow-Kropla</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-ca</language>
+    <copyright>&amp;copy; 2022 Elliot Snow-Kropla</copyright>
+    <lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ejsk.ca/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SponsorHub.io</title>
+      <link>https://ejsk.ca/projects/sponsorhub/</link>
+      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ejsk.ca/projects/sponsorhub/</guid>
+      <description>SponsorHub.io is a platform for video game developers to sponsor Let&amp;rsquo;s Plays and streams, and for streamers and Let&amp;rsquo;s Players to find sponsors for their videos and streams.</description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Runway Calculator</title>
+      <link>https://ejsk.ca/projects/runwaycalculator/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ejsk.ca/projects/runwaycalculator/</guid>
+      <description>Runway Calculator connects to your bank and models your cashflow to predict your startup&amp;rsquo;s death (or profitability!) date.</description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Hairy Little Buggers</title>
+      <link>https://ejsk.ca/projects/hlb/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://ejsk.ca/projects/hlb/</guid>
+      <description>A simulation-management game where your goal is to keep your rude full of &amp;rsquo;tude dwarfs alive against the goblins, demons, and their own filth.</description>
+      <content></content>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,96 +1,91 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Elliot Snow-Kropla</title>
-    <link>http://ejsk.ca/tags/</link>
+    <link>https://ejsk.ca/tags/</link>
     <description>Recent content in Tags on Elliot Snow-Kropla</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2020 Elliot Snow-Kropla</copyright>
-    <lastBuildDate>Fri, 07 Jul 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://ejsk.ca/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-ca</language>
+    <copyright>&amp;copy; 2022 Elliot Snow-Kropla</copyright>
+    <lastBuildDate>Tue, 16 Jun 2020 19:26:29 -0400</lastBuildDate><atom:link href="https://ejsk.ca/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Content tagged as &#39;Academic&#39;</title>
-      <link>http://ejsk.ca/tags/academic/</link>
-      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://ejsk.ca/tags/academic/</guid>
-      <description>Here is a list of all the content that has been tagged as academic.</description>
-    </item>
-    
-    <item>
-      <title>Burns</title>
-      <link>http://ejsk.ca/tags/burns/</link>
-      <pubDate>Wed, 01 Aug 2018 20:02:08 -0500</pubDate>
-      
-      <guid>http://ejsk.ca/tags/burns/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Games</title>
-      <link>http://ejsk.ca/tags/games/</link>
-      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://ejsk.ca/tags/games/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Poetry</title>
-      <link>http://ejsk.ca/tags/poetry/</link>
+      <title>poetry</title>
+      <link>https://ejsk.ca/tags/poetry/</link>
       <pubDate>Tue, 16 Jun 2020 19:26:29 -0400</pubDate>
       
-      <guid>http://ejsk.ca/tags/poetry/</guid>
+      <guid>https://ejsk.ca/tags/poetry/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
-      <title>Programming</title>
-      <link>http://ejsk.ca/tags/programming/</link>
-      <pubDate>Sat, 28 Oct 2017 18:32:47 -0400</pubDate>
-      
-      <guid>http://ejsk.ca/tags/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rust</title>
-      <link>http://ejsk.ca/tags/rust/</link>
-      <pubDate>Sat, 28 Oct 2017 18:32:47 -0400</pubDate>
-      
-      <guid>http://ejsk.ca/tags/rust/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Web</title>
-      <link>http://ejsk.ca/tags/web/</link>
+      <title>web</title>
+      <link>https://ejsk.ca/tags/web/</link>
       <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://ejsk.ca/tags/web/</guid>
+      <guid>https://ejsk.ca/tags/web/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
-      <title>Webdev</title>
-      <link>http://ejsk.ca/tags/webdev/</link>
-      <pubDate>Sat, 28 Oct 2017 18:32:47 -0400</pubDate>
+      <title>burns</title>
+      <link>https://ejsk.ca/tags/burns/</link>
+      <pubDate>Wed, 01 Aug 2018 20:02:08 -0500</pubDate>
       
-      <guid>http://ejsk.ca/tags/webdev/</guid>
+      <guid>https://ejsk.ca/tags/burns/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
-      <title>Wodehouse</title>
-      <link>http://ejsk.ca/tags/wodehouse/</link>
+      <title>wodehouse</title>
+      <link>https://ejsk.ca/tags/wodehouse/</link>
       <pubDate>Fri, 09 Mar 2018 20:02:08 -0500</pubDate>
       
-      <guid>http://ejsk.ca/tags/wodehouse/</guid>
+      <guid>https://ejsk.ca/tags/wodehouse/</guid>
       <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://ejsk.ca/tags/programming/</link>
+      <pubDate>Sat, 28 Oct 2017 18:32:47 -0400</pubDate>
+      
+      <guid>https://ejsk.ca/tags/programming/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>rust</title>
+      <link>https://ejsk.ca/tags/rust/</link>
+      <pubDate>Sat, 28 Oct 2017 18:32:47 -0400</pubDate>
+      
+      <guid>https://ejsk.ca/tags/rust/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>webdev</title>
+      <link>https://ejsk.ca/tags/webdev/</link>
+      <pubDate>Sat, 28 Oct 2017 18:32:47 -0400</pubDate>
+      
+      <guid>https://ejsk.ca/tags/webdev/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>games</title>
+      <link>https://ejsk.ca/tags/games/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://ejsk.ca/tags/games/</guid>
+      <description></description>
+      <content></content>
     </item>
     
   </channel>

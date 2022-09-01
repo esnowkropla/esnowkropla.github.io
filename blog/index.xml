@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Elliot Snow-Kropla</title>
+    <link>https://ejsk.ca/blog/</link>
+    <description>Recent content in Blogs on Elliot Snow-Kropla</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2022 Elliot Snow-Kropla</copyright>
+    <lastBuildDate>Tue, 16 Jun 2020 19:26:29 -0400</lastBuildDate>
+    
+	<atom:link href="https://ejsk.ca/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Church Going</title>
+      <link>https://ejsk.ca/church-going/</link>
+      <pubDate>Tue, 16 Jun 2020 19:26:29 -0400</pubDate>
+      
+      <guid>https://ejsk.ca/church-going/</guid>
+      <description>Once I am sure there&amp;#39;s nothing going on I step inside, letting the door thud shut. Another church: matting, seats, and stone And little books; sprawlings of flowers, cut For Sunday, brownish now; some brass and stuff Up at the holy end; the small neat organ; And a tense, musty, unignorable silence, Brewed God knows how long. Hatless, I take off My cycle-clips in awkward reverence. Move forward, run my hand around the font.</description>
+    </item>
+    
+    <item>
+      <title>A Red, Red Rose</title>
+      <link>https://ejsk.ca/a-red-red-rose/</link>
+      <pubDate>Wed, 01 Aug 2018 20:02:08 -0500</pubDate>
+      
+      <guid>https://ejsk.ca/a-red-red-rose/</guid>
+      <description>O my Luve&amp;#39;s like a red, red rose That’s newly sprung in june; O my Luve&amp;#39;s like the melodie That’s sweetly play&amp;#39;d in tune: As fair art thou, my bonnie lass, So deep in luve am I: And I will luve thee still, my dear, Till a’ the seas gang dry: Till a’ the seas gang dry, my dear, And the rocks melt wi’ the sun: I will luve thee still, my dear, While the sands o’ life shall run.</description>
+    </item>
+    
+    <item>
+      <title>Summer Lightning</title>
+      <link>https://ejsk.ca/summer-lightning/</link>
+      <pubDate>Fri, 09 Mar 2018 20:02:08 -0500</pubDate>
+      
+      <guid>https://ejsk.ca/summer-lightning/</guid>
+      <description>A certain critic - for such men, I may regret to say, do exist - made the nasty remark about my last novel that it contained &amp;lsquo;all the old Wodehouse characters under different names&amp;rsquo;. He has probably now been eaten by bears, like the children who made mock of the prophet Elisha: but if he still survives he will not be to make a similar charge against Summer Lightning. With my superior intelligence, I have outgeneralled the man this time by putting in all the old Wodehouse characters under the same names.</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on Rust Web-Development</title>
+      <link>https://ejsk.ca/thoughts-on-rust-web-development/</link>
+      <pubDate>Sat, 28 Oct 2017 18:32:47 -0400</pubDate>
+      
+      <guid>https://ejsk.ca/thoughts-on-rust-web-development/</guid>
+      <description>This entry will be a little scattershot, just some miscellaneous thoughts and impressions.
+Interacting with APIs It&amp;rsquo;s a little inconvenient to be making a lot of little structs for each feature of an API; where in JavaScript or Python you would have a dictionary, if you want type safety you need to make a struct with the proper fields. Strictly speaking you don&amp;rsquo;t need to; operating on untyped JSON is actually fairly straightforward, but when you know that the rest of your codebase isn&amp;rsquo;t going to crash the parts that aren&amp;rsquo;t guarenteed by the compiler niggle in your brain.</description>
+    </item>
+    
+    <item>
+      <title>Rust Web-Development, Part 1</title>
+      <link>https://ejsk.ca/rust-web-development-part-1/</link>
+      <pubDate>Fri, 04 Aug 2017 10:43:49 -0400</pubDate>
+      
+      <guid>https://ejsk.ca/rust-web-development-part-1/</guid>
+      <description>Now that Hairy Little Buggers is wrapped up, I figured I&amp;rsquo;d use my sabbatical to dive into web-development. This is also a good chance to play with Rust again; the last time I checked it out was before 1.0 when I was playing with the Matasano crypto challenges, so it will be interesting to see how much more mature the ecosystem is.
+Now, I don&amp;rsquo;t really know anything about web-development, so after a little research I picked up Flask Web Development based on the Flask Mega-Tutorial.</description>
+    </item>
+    
+    <item>
+      <title>Recessional</title>
+      <link>https://ejsk.ca/recessional/</link>
+      <pubDate>Mon, 10 Jul 2017 10:08:05 -0400</pubDate>
+      
+      <guid>https://ejsk.ca/recessional/</guid>
+      <description>God of our fathers, known of old, Lord of our far-flung battle line, Beneath whose awful hand we hold Dominion over palm and pine - Lord God of Hosts, be with us yet, Lest we forget - lest we forget! The tumult and the shouting dies; The Captains and the Kings depart: Still stands thine ancient sacrifice, An humble and a contrite heart. Lord God of Hosts, be with us yet, Lest we forget - lest we forget!</description>
+    </item>
+    
+    <item>
+      <title>Excelsior</title>
+      <link>https://ejsk.ca/excelsior/</link>
+      <pubDate>Mon, 10 Jul 2017 09:48:29 -0400</pubDate>
+      
+      <guid>https://ejsk.ca/excelsior/</guid>
+      <description>The shades of night were falling fast, As through an Alpine village passed A youth, who bore, &amp;#39;mid snow and ice, A banner with the strange device, Excelsior! His brow was sad; his eye beneath, Flashed like a falchion from its sheath, And like a silver clarion rung The accents of that unknown tongue, Excelsior! In happy homes he saw the light Of household fires gleam warm and bright; Above, the spectral glaciers shone, And from his lips escaped a groan, Excelsior!</description>
+    </item>
+    
+    <item>
+      <title>First Blog Entry</title>
+      <link>https://ejsk.ca/first-blog-entry/</link>
+      <pubDate>Fri, 07 Jul 2017 17:17:40 -0400</pubDate>
+      
+      <guid>https://ejsk.ca/first-blog-entry/</guid>
+      <description>Alright, I&amp;rsquo;ve rejiggered my website yet again. This actually has some functionality, so maybe I&amp;rsquo;ll actually manage to stick to it this time. Then again, the mark of a true academic is to neglect their website.</description>
+    </item>
+    
+  </channel>
+</rss>

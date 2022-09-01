@@ -1,24 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Games on Elliot Snow-Kropla</title>
-    <link>http://ejsk.ca/tags/games/</link>
-    <description>Recent content in Games on Elliot Snow-Kropla</description>
+    <title>games on Elliot Snow-Kropla</title>
+    <link>https://ejsk.ca/tags/games/</link>
+    <description>Recent content in games on Elliot Snow-Kropla</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2020 Elliot Snow-Kropla</copyright>
-    <lastBuildDate>Fri, 07 Jul 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://ejsk.ca/tags/games/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-ca</language>
+    <copyright>&amp;copy; 2022 Elliot Snow-Kropla</copyright>
+    <lastBuildDate>Fri, 07 Jul 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://ejsk.ca/tags/games/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hairy Little Buggers</title>
-      <link>http://ejsk.ca/project/hlb/</link>
+      <link>https://ejsk.ca/projects/hlb/</link>
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://ejsk.ca/project/hlb/</guid>
-      <description></description>
+      <guid>https://ejsk.ca/projects/hlb/</guid>
+      <description>A simulation-management game where your goal is to keep your rude full of &amp;rsquo;tude dwarfs alive against the goblins, demons, and their own filth.</description>
+      <content></content>
     </item>
     
   </channel>
