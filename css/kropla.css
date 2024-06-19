@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+article {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.blog {
+  margin-bottom: 2rem;
+}
+
+.portrait {
+  border-radius: 10%;
+  max-width: 250px;
+  height: auto;
+  display: inline;
+  vertical-align: top;
+  float: left;
+  margin-right: 1rem;
+}
+
+nav ul.site-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.site-nav li {
+  display: inline-block;
+  margin: 0 1.5rem 0 0;
+}
+
+ul.site-nav li a {
+  color: black;
+}

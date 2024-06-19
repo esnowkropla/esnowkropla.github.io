@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/css/tufte.css"/>
+    <link rel="stylesheet" href="/css/kropla.css"/>
+    <title>kropla.ca</title>
+  </head>
+  <body>
+    <h2 class="title">Elliot Snow-Kropla</h2>
+    <nav class="sans">
+      <ul class="site-nav">
+        <li><a class="no-tufte-underline" href="/">Home</a></li>
+        <li><a class="no-tufte-underline" href="/projects">Projects</a></li>
+        <li><a class="no-tufte-underline" href="/posts">Blog</a></li>
+        <li><a class="no-tufte-underline" href="/feed.atom">Feed</a></li>
+        <li><a class="no-tufte-underline" href="/eskcv.pdf">CV</a></li>
+      </ul>
+    </nav>
+    <article>
+  <h1><a href="/posts/rustweb3.html">A Rust Webserver</a></h1>
+  <p class="subtitle">2018-09-01</p>
+  <small>
+    
+      <a href="/">programming</a>
+    
+      <a href="/">python</a>
+    
+      <a href="/">rust</a>
+    
+      <a href="/">webdev</a>
+    
+  </small>
+  <section>
+    <p>
+  <span class="marginnote">¹You should read <a href="https://tools.ietf.org/html/rfc2616#section-5.1">the spec</a> though! It's actually pretty straightforward, and learning things properly is a good thing.</span></p>
+<p>
+The plan here is to examine a simple webserver that echos back the contents of requests as HTML. The purpose is to compare how you would do this in Rust vs Python, and what static typing and lifetimes and all the things Rust gives you feel from a programmer ergonomics standpoint compared to the equivalent in Python.  This is just some example toy code, and obviously not spec compliant¹, but hopefully it illustrates some of the things that I think about programming languages.</p>
+<h2>
+Server Structure</h2>
+<p>
+The basic binary code is just <a href="https://github.com/esnowkropla/rusty-web/blob/master/src/bin/main.rs">this</a>:</p>
+<pre><code class="rust">extern crate rusty_web;
+
+use rusty_web::server;
+
+fn main() {
+    server();
+}</code></pre>
+<p>
+which loads the function <code class="inline">server</code> from our library and kicks it off.  The <code class="inline">server</code> function looks like <a href="https://github.com/esnowkropla/rusty-web/blob/master/src/lib.rs">this</a>:</p>
+<pre><code class="rust">fn handle_connection(mut stream: TcpStream) {
+    let mut buff = String::new();
+    stream.read_to_string(&amp;mut buff).unwrap();
+    let request = Request::new(&amp;buff);
+    println!(&quot;{:?}&quot;, buff);
+    println!(&quot;{:?}&quot;, request);
+}
+
+pub fn server() {
+    let listener = TcpListener::bind(&quot;127.0.0.1:8000&quot;).unwrap();
+
+    for stream in listener.incoming() {
+        handle_connection(stream.unwrap());
+    }
+}</code></pre>
+<p>
+to make this example a little less trivial, let’s give the server two behaviours rather than one: If a GET request comes in, we’ll respond with an HTML version of the request, and if a POST request comes in, we’ll respond with a JSON object containing the form data.</p>
+
+
+    <p class="links">
+    
+      <a href="/posts/rustweb2.html">
+        <small>
+          &laquo;Thoughts on Rust Web-Development
+        </small>
+      </a>
+    
+    
+    </p>
+  </section>
+</article>
+
+  </body>
+  <footer>
+    &copy; Elliot Snow-Kropla 2024
+  </footer>
+</html>
