@@ -7,7 +7,7 @@
   </author>
   <id>https://www.kropla.ca/</id>
   <title>Elliot Snow-Kropla</title>
-  <updated>2024-06-24T20:32:16.429680Z</updated>
+  <updated>2024-07-04T00:44:22.092947Z</updated>
   <entry>
     <link rel="alternate" href="/posts/churchgoing.html"/>
     <content type="html">
@@ -32,7 +32,7 @@ Hectoring large-scale verses, and pronounce
 'Here endeth' much more loudly than I'd meant.
 The echoes snigger briefly. Back at the door
 I sign the book, donate an Irish sixpence,
-Reflect the place was not worth stopping for.
+Reflect the place was not worth stopping for. 
 
 Yet stop I did: in fact I often do,
 And always end much at a loss like this,
@@ -42,7 +42,7 @@ What we shall turn them into, if we shall keep
 A few cathedrals chronically on show,
 Their parchment, plate and pyx in locked cases,
 And let the rest rent-free to rain and sheep.
-Shall we avoid them as unlucky places?
+Shall we avoid them as unlucky places? 
 
 Or, after dark, will dubious women come
 To make their children touch a particular stone;
@@ -52,7 +52,7 @@ Power of some sort will go on
 In games, in riddles, seemingly at random;
 But superstition, like belief, must die,
 And what remains when disbelief has gone?
-Grass, weedy pavement, brambles, buttress, sky,
+Grass, weedy pavement, brambles, buttress, sky, 
 
 A shape less recognisable each week,
 A purpose more obscure. I wonder who
@@ -62,14 +62,14 @@ That tap and jot and know what rood-lofts were?
 Some ruin-bibber, randy for antique,
 Or Christmas-addict, counting on a whiff
 Of gown-and-bands and organ-pipes and myrrh?
-Or will he be my representative,
+Or will he be my representative, 
 
 Bored, uninformed, knowing the ghostly silt
 Dispersed, yet tending to this cross of ground
 Through suburb scrub because it held unspilt
 So long and equably what since is found
 Only in separation - marriage, and birth,
-And death, and thoughts of these - for which was built
+And death, and thoughts of these - for which was built 
 This special shell? For, though I've no idea
 What this accoutred frowsty barn is worth
 It pleases me to stand in silence here;
@@ -200,7 +200,7 @@ It's a little inconvenient to be making a lot of little structs for each feature
 I wrote about half a dozen little programs to scrape data from YouTube and Twitch as part of [secret project](http://www.this link doesn't go anywhere dot com), as well as the main app; I would probably do one-off scraping type scripts in Python in future, with app code written in Rust.
 
 ## Type Safety!
-Rust's type safety gives is extremely hard to give up; working with Python I constantly have to think harder about the inputs and outputs of my functions, becase the source and compiler isn't doing it for me.
+Rust's type safety gives is extremely hard to give up; working with Python I constantly have to think harder about the inputs and outputs of my functions, becase the source and compiler isn't doing it for me. 
 </content>
     <id>https://www.kropla.ca/posts/rustweb2.html</id>
     <title>Thoughts on Rust Web-Development</title>
@@ -211,14 +211,14 @@ Rust's type safety gives is extremely hard to give up; working with Python I con
     <content type="html">
 Now that [Hairy Little Buggers](http://store.steampowered.com/app/405240) is wrapped up, I figured I'd use my sabbatical to dive into web-development. This is also a good chance to play with [Rust](http://rust-lang.org) again; the last time I checked it out was before 1.0 when I was playing with the [Matasano crypto challenges](http://cryptopals.com/), so it will be interesting to see how much more mature the ecosystem is.
 
-Now, I don't really know anything about web-development, so after a little research I picked up [Flask Web Development](https://www.amazon.ca/Flask-Web-Development-Developing-Applications/dp/1449372627/ref=sr_1_sc_1?ie=UTF8&amp;qid=1501866858&amp;sr=8-1-spell) based on the [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world). I know Python fairly well so I can mentally translate the Python into Rust, and [Flask](http://flask.pocoo.org) seems like the framework I would pick were I to write a web app in Python.
+Now, I don't really know anything about web-development, so after a little research I picked up [Flask Web Development](https://www.amazon.ca/Flask-Web-Development-Developing-Applications/dp/1449372627/ref=sr_1_sc_1?ie=UTF8&amp;qid=1501866858&amp;sr=8-1-spell) based on the [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world). I know Python fairly well so I can mentally translate the Python into Rust, and [Flask](http://flask.pocoo.org) seems like the framework I would pick were I to write a web app in Python. 
 
 ## Framework Selection
 Much as I love writing everything myself, sometimes it makes sense to stand on the shoulders of giants. A combination of browsing the rust sub-reddit and searching the web suggested five initial candidates for a web framework:
-[Nickel](https://github.com/nickel-org/nickel.rs),
-[Iron](https://ironframework.io),
-[Rocket](https://rocket.rs),
-[Rouille](https://github.com/tomaka/rouille), and
+[Nickel](https://github.com/nickel-org/nickel.rs), 
+[Iron](https://ironframework.io), 
+[Rocket](https://rocket.rs), 
+[Rouille](https://github.com/tomaka/rouille), and 
 [Pencil](https://github.com/fengsp/pencil). The following is just my own personal experiences with each framework, and is definitely not meant to be the definitive objective guide to web developent in Rust. In particular, these are my fickle first impressions and snap judgements. Do your own research!
 
 ### Rocket
@@ -313,7 +313,7 @@ As through an Alpine village passed
 A youth, who bore, 'mid snow and ice,
 A banner with the strange device,
     Excelsior!
-
+	
 His brow was sad; his eye beneath,
 Flashed like a falchion from its sheath,
 And like a silver clarion rung
