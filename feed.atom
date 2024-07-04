@@ -7,9 +7,9 @@
   </author>
   <id>https://www.kropla.ca/</id>
   <title>Elliot Snow-Kropla</title>
-  <updated>2024-07-04T00:44:22.092947Z</updated>
+  <updated>2024-07-04T20:40:15.376800Z</updated>
   <entry>
-    <link rel="alternate" href="/posts/churchgoing.html"/>
+    <link rel="alternate" href="/posts/church-going.html"/>
     <content type="html">
 
 &lt;pre&gt;
@@ -88,12 +88,12 @@ If only that so many dead lie round.
 &lt;/code&gt;
 &lt;/pre&gt;
 </content>
-    <id>https://www.kropla.ca/posts/churchgoing.html</id>
+    <id>https://www.kropla.ca/posts/church-going.html</id>
     <title>Church Going</title>
     <updated>2020-06-16T23:26:29Z</updated>
   </entry>
   <entry>
-    <link rel="alternate" href="/posts/rustweb3.html"/>
+    <link rel="alternate" href="/posts/rust-web3.html"/>
     <content type="html">
 
 &lt;p&gt;&lt;span class="marginnote"&gt;¹You should read &lt;a href="https://tools.ietf.org/html/rfc2616#section-5.1"&gt;the spec&lt;/a&gt; though! It's actually pretty straightforward, and learning things properly is a good thing.&lt;/span&gt;&lt;/p&gt;
@@ -134,7 +134,7 @@ pub fn server() {
 ```
 to make this example a little less trivial, let's give the server two behaviours rather than one: If a GET request comes in, we'll respond with an HTML version of the request, and if a POST request comes in, we'll respond with a JSON object containing the form data.
 </content>
-    <id>https://www.kropla.ca/posts/rustweb3.html</id>
+    <id>https://www.kropla.ca/posts/rust-web3.html</id>
     <title>A Rust Webserver</title>
     <updated>2018-09-01T17:32:47Z</updated>
   </entry>
@@ -171,7 +171,7 @@ Tho’ it were ten thousand mile.
     <updated>2018-08-02T01:02:08Z</updated>
   </entry>
   <entry>
-    <link rel="alternate" href="/posts/summerlightning.html"/>
+    <link rel="alternate" href="/posts/summer-lightning.html"/>
     <content type="html">
 
 A certain critic - for such men, I may regret to say, do exist - made
@@ -184,12 +184,12 @@ superior intelligence, I have outgeneralled the man this time
 by putting in all the old Wodehouse characters under the same
 names.  Pretty silly it will make him feel, I rather fancy.
 </content>
-    <id>https://www.kropla.ca/posts/summerlightning.html</id>
+    <id>https://www.kropla.ca/posts/summer-lightning.html</id>
     <title>Summer Lightning</title>
     <updated>2018-03-10T01:02:08Z</updated>
   </entry>
   <entry>
-    <link rel="alternate" href="/posts/rustweb2.html"/>
+    <link rel="alternate" href="/posts/rust-web2.html"/>
     <content type="html">
 
 This entry will be a little scattershot, just some miscellaneous thoughts and impressions.
@@ -202,12 +202,12 @@ I wrote about half a dozen little programs to scrape data from YouTube and Twitc
 ## Type Safety!
 Rust's type safety gives is extremely hard to give up; working with Python I constantly have to think harder about the inputs and outputs of my functions, becase the source and compiler isn't doing it for me. 
 </content>
-    <id>https://www.kropla.ca/posts/rustweb2.html</id>
+    <id>https://www.kropla.ca/posts/rust-web2.html</id>
     <title>Thoughts on Rust Web-Development</title>
     <updated>2017-10-28T22:32:47Z</updated>
   </entry>
   <entry>
-    <link rel="alternate" href="/posts/rustweb.html"/>
+    <link rel="alternate" href="/posts/rust-web.html"/>
     <content type="html">
 Now that [Hairy Little Buggers](http://store.steampowered.com/app/405240) is wrapped up, I figured I'd use my sabbatical to dive into web-development. This is also a good chance to play with [Rust](http://rust-lang.org) again; the last time I checked it out was before 1.0 when I was playing with the [Matasano crypto challenges](http://cryptopals.com/), so it will be interesting to see how much more mature the ecosystem is.
 
@@ -239,7 +239,7 @@ It was at this point that I considered going below even Hyper, and writing the H
 
 Luckily for me though, as I was searching around for the solution to my latest problem I saw a code example of [Rocket](https://rocket.rs), which I had so quickly dismissed before; and I liked what I saw! Request routing, sessions handling, state handling, with a heavy emphasis on developer experience. A fair bit of magic in the code generation to handle the routing, but implementing the traits in the request guards and the serialization was REALLY easy. Converted, I started up a new project and threw Rocket into the Cargo.toml. This is long enough, so we'll leave off here; next week, actually building things!
 </content>
-    <id>https://www.kropla.ca/posts/rustweb.html</id>
+    <id>https://www.kropla.ca/posts/rust-web.html</id>
     <title>Rust Web-Development, Part 1</title>
     <updated>2017-08-04T14:43:49Z</updated>
   </entry>
@@ -371,11 +371,11 @@ A voice fell like a falling star,
     <updated>2017-07-10T13:48:29Z</updated>
   </entry>
   <entry>
-    <link rel="alternate" href="/posts/firstblogentry.html"/>
+    <link rel="alternate" href="/posts/first-blog-entry.html"/>
     <content type="html">
 Alright, I've rejiggered my website yet again.  This actually has some functionality, so maybe I'll actually manage to stick to it this time.  Then again, the mark of a true academic is to neglect their website.
 </content>
-    <id>https://www.kropla.ca/posts/firstblogentry.html</id>
+    <id>https://www.kropla.ca/posts/first-blog-entry.html</id>
     <title>First Blog Entry</title>
     <updated>2017-07-07T21:17:40Z</updated>
   </entry>
