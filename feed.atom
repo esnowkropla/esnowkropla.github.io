@@ -7,7 +7,7 @@
   </author>
   <id>https://www.kropla.ca/</id>
   <title>Elliot Snow-Kropla</title>
-  <updated>2024-07-04T20:40:15.376800Z</updated>
+  <updated>2024-07-05T01:31:12.761074Z</updated>
   <entry>
     <link rel="alternate" href="/posts/church-going.html"/>
     <content type="html">
@@ -96,9 +96,9 @@ If only that so many dead lie round.
     <link rel="alternate" href="/posts/rust-web3.html"/>
     <content type="html">
 
-&lt;p&gt;&lt;span class="marginnote"&gt;¹You should read &lt;a href="https://tools.ietf.org/html/rfc2616#section-5.1"&gt;the spec&lt;/a&gt; though! It's actually pretty straightforward, and learning things properly is a good thing.&lt;/span&gt;&lt;/p&gt;
-
-The plan here is to examine a simple webserver that echos back the contents of requests as HTML. The purpose is to compare how you would do this in Rust vs Python, and what static typing and lifetimes and all the things Rust gives you feel from a programmer ergonomics standpoint compared to the equivalent in Python.  This is just some example toy code, and obviously not spec compliant¹, but hopefully it illustrates some of the things that I think about programming languages.
+The plan here is to examine a simple webserver that echos back the contents of requests as HTML. The purpose is to compare how you would do this in Rust vs Python, and what static typing and lifetimes and all the things Rust gives you feel from a programmer ergonomics standpoint compared to the equivalent in Python.  This is just some example toy code, and obviously not spec compliant
+&lt;%= side_note("sn-spec") do %&gt;You should read &lt;a href="https://tools.ietf.org/html/rfc2616#section-5.1"&gt;the spec&lt;/a&gt; though! It's actually pretty straightforward, and learning things properly is a good thing.&lt;% end %&gt;
+, but hopefully it illustrates some of the things that I think about programming languages.
 
 ## Server Structure
 
