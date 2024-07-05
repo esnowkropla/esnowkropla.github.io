@@ -7,7 +7,29 @@
   </author>
   <id>https://www.kropla.ca/</id>
   <title>Elliot Snow-Kropla</title>
-  <updated>2024-07-05T01:40:48.297388Z</updated>
+  <updated>2024-07-05T03:07:47.312562Z</updated>
+  <entry>
+    <link rel="alternate" href="/posts/2024-family-update.html"/>
+    <content type="html">
+
+I started this site as a place to stash my resume, but now I can use it to show of pictures of my family as well.  When I first put this up I didn't have one, but now my family is a wife and *two* children.  I am blessed.
+
+&lt;%= img("sn-mina", "/img/family-2024-07/mina-playground-2024-07.jpg") do %&gt;
+  Mina at two and a half, enjoying summertime at the playground.
+&lt;% end %&gt;
+
+&lt;%= img("sn-freddie", "/img/family-2024-07/freddie-parakeet.jpg") do %&gt;
+  Freddie at one year old, rocking his parakeet look.
+&lt;% end %&gt;
+
+&lt;%= img("sn-elliot", "/img/family-2024-07/elliot-parakeet.jpg") do %&gt;
+  I have no idea where he gets it from.
+&lt;% end %&gt;
+</content>
+    <id>https://www.kropla.ca/posts/2024-family-update.html</id>
+    <title>2024 Family Update</title>
+    <updated>2024-07-05T01:50:54.475954Z</updated>
+  </entry>
   <entry>
     <link rel="alternate" href="/posts/church-going.html"/>
     <content type="html">
