@@ -7,24 +7,63 @@
   </author>
   <id>https://www.kropla.ca/</id>
   <title>Elliot Snow-Kropla</title>
-  <updated>2024-07-05T03:07:47.312562Z</updated>
+  <updated>2024-07-09T23:41:09.106032Z</updated>
   <entry>
     <link rel="alternate" href="/posts/2024-family-update.html"/>
-    <content type="html">
+    <content type="html">&lt;article&gt;
+  &lt;h1&gt;&lt;a href="/posts/2024-family-update.html"&gt;2024 Family Update&lt;/a&gt;&lt;/h1&gt;
+  &lt;p class="subtitle"&gt;2024-07-05&lt;/p&gt;
+  &lt;small&gt;
+    
+      &lt;a href="/tags/family"&gt;family&lt;/a&gt;
+    
+      &lt;a href="/tags/photos"&gt;photos&lt;/a&gt;
+    
+  &lt;/small&gt;
+  &lt;section&gt;
+    &lt;p&gt;
+I started this site as a place to stash my resume, but now I can use it to show of pictures of my family as well.  When I first put this up I didn’t have one, but now my family is a wife and &lt;em&gt;two&lt;/em&gt; children.  I am blessed.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;label class="margin-toggle" for="sn-mina"&gt;⊕&lt;/label&gt;
+&lt;input id="sn-mina" class="margin-toggle" type="checkbox"/&gt;
+&lt;span class="marginnote"&gt;
 
-I started this site as a place to stash my resume, but now I can use it to show of pictures of my family as well.  When I first put this up I didn't have one, but now my family is a wife and *two* children.  I am blessed.
-
-&lt;%= img("sn-mina", "/img/family-2024-07/mina-playground-2024-07.jpg") do %&gt;
   Mina at two and a half, enjoying summertime at the playground.
-&lt;% end %&gt;
 
-&lt;%= img("sn-freddie", "/img/family-2024-07/freddie-parakeet.jpg") do %&gt;
+&lt;/span&gt;
+  &lt;img class="photo" src="/img/family-2024-07/mina-playground-2024-07.jpg" /&gt;&lt;/figure&gt;
+&lt;figure&gt;
+    &lt;label class="margin-toggle" for="sn-freddie"&gt;⊕&lt;/label&gt;
+&lt;input id="sn-freddie" class="margin-toggle" type="checkbox"/&gt;
+&lt;span class="marginnote"&gt;
+
   Freddie at one year old, rocking his parakeet look.
-&lt;% end %&gt;
 
-&lt;%= img("sn-elliot", "/img/family-2024-07/elliot-parakeet.jpg") do %&gt;
+&lt;/span&gt;
+  &lt;img class="photo" src="/img/family-2024-07/freddie-parakeet.jpg" /&gt;&lt;/figure&gt;
+&lt;figure&gt;
+    &lt;label class="margin-toggle" for="sn-elliot"&gt;⊕&lt;/label&gt;
+&lt;input id="sn-elliot" class="margin-toggle" type="checkbox"/&gt;
+&lt;span class="marginnote"&gt;
+
   I have no idea where he gets it from.
-&lt;% end %&gt;
+
+&lt;/span&gt;
+  &lt;img class="photo" src="/img/family-2024-07/elliot-parakeet.jpg" /&gt;&lt;/figure&gt;
+
+
+    &lt;p class="links"&gt;
+    
+      &lt;a href="/posts/church-going.html"&gt;
+        &lt;small&gt;
+          &amp;laquo;Church Going
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    
+    &lt;/p&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
 </content>
     <id>https://www.kropla.ca/posts/2024-family-update.html</id>
     <title>2024 Family Update</title>
@@ -32,11 +71,16 @@ I started this site as a place to stash my resume, but now I can use it to show 
   </entry>
   <entry>
     <link rel="alternate" href="/posts/church-going.html"/>
-    <content type="html">
-
-&lt;pre&gt;
-&lt;code&gt;
-Once I am sure there's nothing going on
+    <content type="html">&lt;article&gt;
+  &lt;h1&gt;&lt;a href="/posts/church-going.html"&gt;Church Going&lt;/a&gt;&lt;/h1&gt;
+  &lt;p class="subtitle"&gt;2020-06-16&lt;/p&gt;
+  &lt;small&gt;
+    
+      &lt;a href="/tags/poetry"&gt;poetry&lt;/a&gt;
+    
+  &lt;/small&gt;
+  &lt;section&gt;
+    &lt;pre&gt;&lt;code&gt;Once I am sure there's nothing going on
 I step inside, letting the door thud shut.
 Another church: matting, seats, and stone
 And little books; sprawlings of flowers, cut
@@ -106,9 +150,27 @@ And gravitating with it to this ground,
 Which, he once heard, was proper to grow wise in,
 If only that so many dead lie round.
 
--Philip Larkin
-&lt;/code&gt;
-&lt;/pre&gt;
+-Philip Larkin&lt;/code&gt;&lt;/pre&gt;
+
+
+    &lt;p class="links"&gt;
+    
+      &lt;a href="/posts/rust-web3.html"&gt;
+        &lt;small&gt;
+          &amp;laquo;A Rust Webserver
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    
+      &lt;a href="/posts/2024-family-update.html"&gt;
+        &lt;small&gt;
+          2024 Family Update&amp;raquo;
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    &lt;/p&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
 </content>
     <id>https://www.kropla.ca/posts/church-going.html</id>
     <title>Church Going</title>
@@ -116,44 +178,78 @@ If only that so many dead lie round.
   </entry>
   <entry>
     <link rel="alternate" href="/posts/rust-web3.html"/>
-    <content type="html">
-
-The plan here is to examine a simple webserver that echos back the contents of requests as HTML. The purpose is to compare how you would do this in Rust vs Python, and what static typing and lifetimes and all the things Rust gives you feel from a programmer ergonomics standpoint compared to the equivalent in Python.  This is just some example toy code, and obviously not spec compliant&lt;%= side_note("sn-spec") do %&gt;You should read &lt;a href="https://tools.ietf.org/html/rfc2616#section-5.1"&gt;the spec&lt;/a&gt; though! It's actually pretty straightforward, and learning things properly is a good thing.&lt;% end %&gt;
-, but hopefully it illustrates some of the things that I think about programming languages.
-
-## Server Structure
-
-The basic binary code is just [this](https://github.com/esnowkropla/rusty-web/blob/master/src/bin/main.rs):
-```rust
-extern crate rusty_web;
+    <content type="html">&lt;article&gt;
+  &lt;h1&gt;&lt;a href="/posts/rust-web3.html"&gt;A Rust Webserver&lt;/a&gt;&lt;/h1&gt;
+  &lt;p class="subtitle"&gt;2018-09-01&lt;/p&gt;
+  &lt;small&gt;
+    
+      &lt;a href="/tags/programming"&gt;programming&lt;/a&gt;
+    
+      &lt;a href="/tags/python"&gt;python&lt;/a&gt;
+    
+      &lt;a href="/tags/rust"&gt;rust&lt;/a&gt;
+    
+      &lt;a href="/tags/webdev"&gt;webdev&lt;/a&gt;
+    
+  &lt;/small&gt;
+  &lt;section&gt;
+    &lt;p&gt;
+The plan here is to examine a simple webserver that echos back the contents of requests as HTML. The purpose is to compare how you would do this in Rust vs Python, and what static typing and lifetimes and all the things Rust gives you feel from a programmer ergonomics standpoint compared to the equivalent in Python.  This is just some example toy code, and obviously not spec compliant&lt;label class="margin-toggle sidenote-number" for="sn-spec"&gt;&lt;/label&gt;
+&lt;input id="sn-spec" class="margin-toggle" type="checkbox"/&gt;
+&lt;span class="sidenote"&gt;
+You should read &lt;a href="https://tools.ietf.org/html/rfc2616#section-5.1"&gt;the spec&lt;/a&gt; though! It's actually pretty straightforward, and learning things properly is a good thing.
+&lt;/span&gt;
+, but hopefully it illustrates some of the things that I think about programming languages.&lt;/p&gt;
+&lt;h2&gt;
+Server Structure&lt;/h2&gt;
+&lt;p&gt;
+The basic binary code is just &lt;a href="https://github.com/esnowkropla/rusty-web/blob/master/src/bin/main.rs"&gt;this&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="rust"&gt;extern crate rusty_web;
 
 use rusty_web::server;
 
 fn main() {
     server();
-}
-```
-
-which loads the function `server` from our library and kicks it off.  The `server` function looks like [this](https://github.com/esnowkropla/rusty-web/blob/master/src/lib.rs):
-
-```rust
-fn handle_connection(mut stream: TcpStream) {
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+which loads the function &lt;code class="inline"&gt;server&lt;/code&gt; from our library and kicks it off.  The &lt;code class="inline"&gt;server&lt;/code&gt; function looks like &lt;a href="https://github.com/esnowkropla/rusty-web/blob/master/src/lib.rs"&gt;this&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="rust"&gt;fn handle_connection(mut stream: TcpStream) {
     let mut buff = String::new();
-    stream.read_to_string(&amp;mut buff).unwrap();
-    let request = Request::new(&amp;buff);
-    println!("{:?}", buff);
-    println!("{:?}", request);
+    stream.read_to_string(&amp;amp;mut buff).unwrap();
+    let request = Request::new(&amp;amp;buff);
+    println!(&quot;{:?}&quot;, buff);
+    println!(&quot;{:?}&quot;, request);
 }
 
 pub fn server() {
-    let listener = TcpListener::bind("127.0.0.1:8000").unwrap();
+    let listener = TcpListener::bind(&quot;127.0.0.1:8000&quot;).unwrap();
 
     for stream in listener.incoming() {
         handle_connection(stream.unwrap());
     }
-}
-```
-to make this example a little less trivial, let's give the server two behaviours rather than one: If a GET request comes in, we'll respond with an HTML version of the request, and if a POST request comes in, we'll respond with a JSON object containing the form data.
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+to make this example a little less trivial, let’s give the server two behaviours rather than one: If a GET request comes in, we’ll respond with an HTML version of the request, and if a POST request comes in, we’ll respond with a JSON object containing the form data.&lt;/p&gt;
+
+
+    &lt;p class="links"&gt;
+    
+      &lt;a href="/posts/redrose.html"&gt;
+        &lt;small&gt;
+          &amp;laquo;A Red, Red Rose
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    
+      &lt;a href="/posts/church-going.html"&gt;
+        &lt;small&gt;
+          Church Going&amp;raquo;
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    &lt;/p&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
 </content>
     <id>https://www.kropla.ca/posts/rust-web3.html</id>
     <title>A Rust Webserver</title>
@@ -161,11 +257,18 @@ to make this example a little less trivial, let's give the server two behaviours
   </entry>
   <entry>
     <link rel="alternate" href="/posts/redrose.html"/>
-    <content type="html">
-
-&lt;pre&gt;
-&lt;code&gt;
-O my Luve's like a red, red rose
+    <content type="html">&lt;article&gt;
+  &lt;h1&gt;&lt;a href="/posts/redrose.html"&gt;A Red, Red Rose&lt;/a&gt;&lt;/h1&gt;
+  &lt;p class="subtitle"&gt;2018-08-02&lt;/p&gt;
+  &lt;small&gt;
+    
+      &lt;a href="/tags/burns"&gt;burns&lt;/a&gt;
+    
+      &lt;a href="/tags/poetry"&gt;poetry&lt;/a&gt;
+    
+  &lt;/small&gt;
+  &lt;section&gt;
+    &lt;pre&gt;&lt;code&gt;O my Luve's like a red, red rose
 That’s newly sprung in june;
 O my Luve's like the melodie
 That’s sweetly play'd in tune:
@@ -183,9 +286,27 @@ While the sands o’ life shall run.
 And fare thee weel, my only Luve
 And fare thee weel, a while!
 And I will come again, my Luve,
-Tho’ it were ten thousand mile.
-&lt;/code&gt;
-&lt;/pre&gt;
+Tho’ it were ten thousand mile.&lt;/code&gt;&lt;/pre&gt;
+
+
+    &lt;p class="links"&gt;
+    
+      &lt;a href="/posts/summer-lightning.html"&gt;
+        &lt;small&gt;
+          &amp;laquo;Summer Lightning
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    
+      &lt;a href="/posts/rust-web3.html"&gt;
+        &lt;small&gt;
+          A Rust Webserver&amp;raquo;
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    &lt;/p&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
 </content>
     <id>https://www.kropla.ca/posts/redrose.html</id>
     <title>A Red, Red Rose</title>
@@ -193,17 +314,47 @@ Tho’ it were ten thousand mile.
   </entry>
   <entry>
     <link rel="alternate" href="/posts/summer-lightning.html"/>
-    <content type="html">
-
+    <content type="html">&lt;article&gt;
+  &lt;h1&gt;&lt;a href="/posts/summer-lightning.html"&gt;Summer Lightning&lt;/a&gt;&lt;/h1&gt;
+  &lt;p class="subtitle"&gt;2018-03-10&lt;/p&gt;
+  &lt;small&gt;
+    
+      &lt;a href="/tags/poetry"&gt;poetry&lt;/a&gt;
+    
+      &lt;a href="/tags/wodehouse"&gt;wodehouse&lt;/a&gt;
+    
+  &lt;/small&gt;
+  &lt;section&gt;
+    &lt;p&gt;
 A certain critic - for such men, I may regret to say, do exist - made
-the nasty remark about my last novel that it contained 'all the old
-Wodehouse characters under different names'. He has probably
+the nasty remark about my last novel that it contained ‘all the old
+Wodehouse characters under different names’. He has probably
 now been eaten by bears, like the children who made mock of
 the prophet Elisha: but if he still survives he will not be to
-make a similar charge against *Summer Lightning*. With my
+make a similar charge against &lt;em&gt;Summer Lightning&lt;/em&gt;. With my
 superior intelligence, I have outgeneralled the man this time
 by putting in all the old Wodehouse characters under the same
-names.  Pretty silly it will make him feel, I rather fancy.
+names.  Pretty silly it will make him feel, I rather fancy.&lt;/p&gt;
+
+
+    &lt;p class="links"&gt;
+    
+      &lt;a href="/posts/rust-web2.html"&gt;
+        &lt;small&gt;
+          &amp;laquo;Thoughts on Rust Web-Development
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    
+      &lt;a href="/posts/redrose.html"&gt;
+        &lt;small&gt;
+          A Red, Red Rose&amp;raquo;
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    &lt;/p&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
 </content>
     <id>https://www.kropla.ca/posts/summer-lightning.html</id>
     <title>Summer Lightning</title>
@@ -211,17 +362,51 @@ names.  Pretty silly it will make him feel, I rather fancy.
   </entry>
   <entry>
     <link rel="alternate" href="/posts/rust-web2.html"/>
-    <content type="html">
+    <content type="html">&lt;article&gt;
+  &lt;h1&gt;&lt;a href="/posts/rust-web2.html"&gt;Thoughts on Rust Web-Development&lt;/a&gt;&lt;/h1&gt;
+  &lt;p class="subtitle"&gt;2017-10-28&lt;/p&gt;
+  &lt;small&gt;
+    
+      &lt;a href="/tags/programming"&gt;programming&lt;/a&gt;
+    
+      &lt;a href="/tags/rust"&gt;rust&lt;/a&gt;
+    
+      &lt;a href="/tags/webdev"&gt;webdev&lt;/a&gt;
+    
+  &lt;/small&gt;
+  &lt;section&gt;
+    &lt;p&gt;
+This entry will be a little scattershot, just some miscellaneous thoughts and impressions.&lt;/p&gt;
+&lt;h2&gt;
+Interacting with APIs&lt;/h2&gt;
+&lt;p&gt;
+It’s a little inconvenient to be making a lot of little structs for each feature of an API; where in JavaScript or Python you would have a dictionary, if you want type safety you need to make a struct with the proper fields. Strictly speaking you don’t &lt;em&gt;need&lt;/em&gt; to; operating on &lt;a href="https://docs.serde.rs/serde_json/#operating-on-untyped-json-values"&gt;untyped JSON&lt;/a&gt; is actually fairly straightforward, but when you know that the rest of your codebase isn’t going to crash the parts that aren’t guarenteed by the compiler niggle in your brain.  The &lt;a href="https://github.com/serde-rs/json"&gt;serde-rs&lt;/a&gt; library is everything I want in a JSON serialization library. There’s not much in particular to call out, which is good in an infrastructure library; although I can say it’s … much more ergonomic than the serialization I wrote for &lt;a href="http://www.hairylittlebuggers.com"&gt;Hairy Little Buggers&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+I wrote about half a dozen little programs to scrape data from YouTube and Twitch as part of &lt;a href="http://www.this link doesn't go anywhere dot com"&gt;secret project&lt;/a&gt;, as well as the main app; I would probably do one-off scraping type scripts in Python in future, with app code written in Rust.&lt;/p&gt;
+&lt;h2&gt;
+Type Safety!&lt;/h2&gt;
+&lt;p&gt;
+Rust’s type safety gives is extremely hard to give up; working with Python I constantly have to think harder about the inputs and outputs of my functions, becase the source and compiler isn’t doing it for me. &lt;/p&gt;
 
-This entry will be a little scattershot, just some miscellaneous thoughts and impressions.
 
-## Interacting with APIs
-It's a little inconvenient to be making a lot of little structs for each feature of an API; where in JavaScript or Python you would have a dictionary, if you want type safety you need to make a struct with the proper fields. Strictly speaking you don't *need* to; operating on [untyped JSON](https://docs.serde.rs/serde_json/#operating-on-untyped-json-values) is actually fairly straightforward, but when you know that the rest of your codebase isn't going to crash the parts that aren't guarenteed by the compiler niggle in your brain.  The [serde-rs](https://github.com/serde-rs/json) library is everything I want in a JSON serialization library. There's not much in particular to call out, which is good in an infrastructure library; although I can say it's ... much more ergonomic than the serialization I wrote for [Hairy Little Buggers](http://www.hairylittlebuggers.com).
-
-I wrote about half a dozen little programs to scrape data from YouTube and Twitch as part of [secret project](http://www.this link doesn't go anywhere dot com), as well as the main app; I would probably do one-off scraping type scripts in Python in future, with app code written in Rust.
-
-## Type Safety!
-Rust's type safety gives is extremely hard to give up; working with Python I constantly have to think harder about the inputs and outputs of my functions, becase the source and compiler isn't doing it for me. 
+    &lt;p class="links"&gt;
+    
+      &lt;a href="/posts/rust-web.html"&gt;
+        &lt;small&gt;
+          &amp;laquo;Rust Web-Development, Part 1
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    
+      &lt;a href="/posts/summer-lightning.html"&gt;
+        &lt;small&gt;
+          Summer Lightning&amp;raquo;
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    &lt;/p&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
 </content>
     <id>https://www.kropla.ca/posts/rust-web2.html</id>
     <title>Thoughts on Rust Web-Development</title>
@@ -229,36 +414,74 @@ Rust's type safety gives is extremely hard to give up; working with Python I con
   </entry>
   <entry>
     <link rel="alternate" href="/posts/rust-web.html"/>
-    <content type="html">
-Now that [Hairy Little Buggers](http://store.steampowered.com/app/405240) is wrapped up, I figured I'd use my sabbatical to dive into web-development. This is also a good chance to play with [Rust](http://rust-lang.org) again; the last time I checked it out was before 1.0 when I was playing with the [Matasano crypto challenges](http://cryptopals.com/), so it will be interesting to see how much more mature the ecosystem is.
-
-Now, I don't really know anything about web-development, so after a little research I picked up [Flask Web Development](https://www.amazon.ca/Flask-Web-Development-Developing-Applications/dp/1449372627/ref=sr_1_sc_1?ie=UTF8&amp;qid=1501866858&amp;sr=8-1-spell) based on the [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world). I know Python fairly well so I can mentally translate the Python into Rust, and [Flask](http://flask.pocoo.org) seems like the framework I would pick were I to write a web app in Python. 
-
-## Framework Selection
+    <content type="html">&lt;article&gt;
+  &lt;h1&gt;&lt;a href="/posts/rust-web.html"&gt;Rust Web-Development, Part 1&lt;/a&gt;&lt;/h1&gt;
+  &lt;p class="subtitle"&gt;2017-08-04&lt;/p&gt;
+  &lt;small&gt;
+    
+      &lt;a href="/tags/programming"&gt;programming&lt;/a&gt;
+    
+      &lt;a href="/tags/rust"&gt;rust&lt;/a&gt;
+    
+      &lt;a href="/tags/webdev"&gt;webdev&lt;/a&gt;
+    
+  &lt;/small&gt;
+  &lt;section&gt;
+    &lt;p&gt;
+Now that &lt;a href="http://store.steampowered.com/app/405240"&gt;Hairy Little Buggers&lt;/a&gt; is wrapped up, I figured I’d use my sabbatical to dive into web-development. This is also a good chance to play with &lt;a href="http://rust-lang.org"&gt;Rust&lt;/a&gt; again; the last time I checked it out was before 1.0 when I was playing with the &lt;a href="http://cryptopals.com/"&gt;Matasano crypto challenges&lt;/a&gt;, so it will be interesting to see how much more mature the ecosystem is.&lt;/p&gt;
+&lt;p&gt;
+Now, I don’t really know anything about web-development, so after a little research I picked up &lt;a href="https://www.amazon.ca/Flask-Web-Development-Developing-Applications/dp/1449372627/ref=sr_1_sc_1?ie=UTF8&amp;qid=1501866858&amp;sr=8-1-spell"&gt;Flask Web Development&lt;/a&gt; based on the &lt;a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world"&gt;Flask Mega-Tutorial&lt;/a&gt;. I know Python fairly well so I can mentally translate the Python into Rust, and &lt;a href="http://flask.pocoo.org"&gt;Flask&lt;/a&gt; seems like the framework I would pick were I to write a web app in Python. &lt;/p&gt;
+&lt;h2&gt;
+Framework Selection&lt;/h2&gt;
+&lt;p&gt;
 Much as I love writing everything myself, sometimes it makes sense to stand on the shoulders of giants. A combination of browsing the rust sub-reddit and searching the web suggested five initial candidates for a web framework:
-[Nickel](https://github.com/nickel-org/nickel.rs), 
-[Iron](https://ironframework.io), 
-[Rocket](https://rocket.rs), 
-[Rouille](https://github.com/tomaka/rouille), and 
-[Pencil](https://github.com/fengsp/pencil). The following is just my own personal experiences with each framework, and is definitely not meant to be the definitive objective guide to web developent in Rust. In particular, these are my fickle first impressions and snap judgements. Do your own research!
+&lt;a href="https://github.com/nickel-org/nickel.rs"&gt;Nickel&lt;/a&gt;, 
+&lt;a href="https://ironframework.io"&gt;Iron&lt;/a&gt;, 
+&lt;a href="https://rocket.rs"&gt;Rocket&lt;/a&gt;, 
+&lt;a href="https://github.com/tomaka/rouille"&gt;Rouille&lt;/a&gt;, and 
+&lt;a href="https://github.com/fengsp/pencil"&gt;Pencil&lt;/a&gt;. The following is just my own personal experiences with each framework, and is definitely not meant to be the definitive objective guide to web developent in Rust. In particular, these are my fickle first impressions and snap judgements. Do your own research!&lt;/p&gt;
+&lt;h3&gt;
+Rocket&lt;/h3&gt;
+&lt;p&gt;
+Rocket requires the use of the &lt;code class="inline"&gt;nightly&lt;/code&gt; compiler, which annoys me.  A pretty decent fraction of common packages in the Rust ecosystem seemingly still rely on &lt;code class="inline"&gt;nightly&lt;/code&gt; rather than &lt;code class="inline"&gt;stable&lt;/code&gt;. Using Rust in production is already questionable given it’s novelty, and using the &lt;code class="inline"&gt;nightly&lt;/code&gt; version of the compiler strikes me as a bridge too far. So Rocket’s out.&lt;/p&gt;
+&lt;h3&gt;
+Rouille and Pencil&lt;/h3&gt;
+&lt;p&gt;
+Rouille and Pencil are smaller frameworks, which aligns with my desire to do most of the programming and component selection myself rather than delegating to a monster framework like Rails or Django, so I tried them out next.  Both seem pretty immature though, so after getting my &lt;code class="inline"&gt;hello-world&lt;/code&gt; servers up and running it seemed like I would have to build a &lt;em&gt;lot&lt;/em&gt; myself. At that point the impedance mismatch between my code and the framework makes me want to just write the framework part myself as well. Scratch these two off the list.&lt;/p&gt;
+&lt;h3&gt;
+Nickel and Iron&lt;/h3&gt;
+&lt;p&gt;
+Nickel and Iron seem pretty similar, with more of a batteries-included philosophy then Rouille or Pencil. Iron seems more mature and seems to have more development activity around it, so I picked Iron (sorry Nickel).&lt;/p&gt;
+&lt;p&gt;
+I got templating working with &lt;a href="https://github.com/sunng87"&gt;handlebars-iron&lt;/a&gt;, and was messing around with sessions and forms when I stumbled upon a bug I could not solve. Implementing &lt;a href="https://en.wikipedia.org/wiki/Post/Redirect/Get"&gt;Post/Redirect/Get&lt;/a&gt; resulted in something in the stack (I’m not sure if it was &lt;a href="https://github.com/hyperium/hyper"&gt;Hyper&lt;/a&gt; or Iron) parsing the incoming GET request as &lt;code class="inline"&gt;Method::Extension(user=USERNAME&amp;amp;password=PASSWDGET)&lt;/code&gt;, rather than what I would expect &lt;code class="inline"&gt;Method::Get&lt;/code&gt;. It looks like Iron is interpreting the form data as part of the method? Forms a pretty common part of a web app, one would think they would work pretty well. Iron includes handlers to redirect, and a &lt;code class="inline"&gt;url_for&lt;/code&gt; function to find the address of routes. After a couple of days of not being able to find a problem on my end, I gave up on Iron. The next step was to start debugging &lt;a href="https://ironframework.io"&gt;Iron&lt;/a&gt; and &lt;a href="https://github.com/hyperium/hyper"&gt;Hyper&lt;/a&gt; code to figure out why they’re not parsing the http request correctly, and pretty much the whole point of a framework is to avoid parsing request headers yourself. You can check out the final state of my iron experiment &lt;a href="https://github.com/esnowkropla/iron_test"&gt;here&lt;/a&gt;; it’s pretty functional, and the P/R/G problem is reasonably well illustrated because the code is so small.&lt;/p&gt;
+&lt;h2&gt;
+Pure Hyper&lt;/h2&gt;
+&lt;p&gt;
+At this point I figured that for a simple CRUD app I don’t necessarily need a complete web framework, maybe I can just work off of a bare HTTP server. I have already briefly mentioned &lt;a href="https://hyper.rs/"&gt;Hyper&lt;/a&gt;; it appears to be THE http server for Rust. After getting it set up and running through the tutorials though, I was confounded by complexity of the traits that are required to be implemented for fielding requests; Hyper appears to be in transition between blocking and async io, and the user interface is still a little hairy. In particular I’m going to need global mutable state at some point (the database), and getting the borrowing working correctly was proving more finicky than I would like.&lt;/p&gt;
+&lt;p&gt;
+It was at this point that I considered going below even Hyper, and writing the HTTP server myself from scratch. This is silly; if I want to get anything done I shouldn’t rewrite the whole stack myself. The other alternative would be to abandon Rust and just play around with Flask; I could at least build my web apps, even if I wasn’t playing with a new(ish) language.&lt;/p&gt;
+&lt;p&gt;
+Luckily for me though, as I was searching around for the solution to my latest problem I saw a code example of &lt;a href="https://rocket.rs"&gt;Rocket&lt;/a&gt;, which I had so quickly dismissed before; and I liked what I saw! Request routing, sessions handling, state handling, with a heavy emphasis on developer experience. A fair bit of magic in the code generation to handle the routing, but implementing the traits in the request guards and the serialization was REALLY easy. Converted, I started up a new project and threw Rocket into the Cargo.toml. This is long enough, so we’ll leave off here; next week, actually building things!&lt;/p&gt;
 
-### Rocket
-Rocket requires the use of the `nightly` compiler, which annoys me.  A pretty decent fraction of common packages in the Rust ecosystem seemingly still rely on `nightly` rather than `stable`. Using Rust in production is already questionable given it's novelty, and using the `nightly` version of the compiler strikes me as a bridge too far. So Rocket's out.
 
-### Rouille and Pencil
-Rouille and Pencil are smaller frameworks, which aligns with my desire to do most of the programming and component selection myself rather than delegating to a monster framework like Rails or Django, so I tried them out next.  Both seem pretty immature though, so after getting my `hello-world` servers up and running it seemed like I would have to build a *lot* myself. At that point the impedance mismatch between my code and the framework makes me want to just write the framework part myself as well. Scratch these two off the list.
-
-### Nickel and Iron
-Nickel and Iron seem pretty similar, with more of a batteries-included philosophy then Rouille or Pencil. Iron seems more mature and seems to have more development activity around it, so I picked Iron (sorry Nickel).
-
-I got templating working with [handlebars-iron](https://github.com/sunng87), and was messing around with sessions and forms when I stumbled upon a bug I could not solve. Implementing [Post/Redirect/Get](https://en.wikipedia.org/wiki/Post/Redirect/Get) resulted in something in the stack (I'm not sure if it was [Hyper](https://github.com/hyperium/hyper) or Iron) parsing the incoming GET request as `Method::Extension(user=USERNAME&amp;password=PASSWDGET)`, rather than what I would expect `Method::Get`. It looks like Iron is interpreting the form data as part of the method? Forms a pretty common part of a web app, one would think they would work pretty well. Iron includes handlers to redirect, and a `url_for` function to find the address of routes. After a couple of days of not being able to find a problem on my end, I gave up on Iron. The next step was to start debugging [Iron](https://ironframework.io) and [Hyper](https://github.com/hyperium/hyper) code to figure out why they're not parsing the http request correctly, and pretty much the whole point of a framework is to avoid parsing request headers yourself. You can check out the final state of my iron experiment [here](https://github.com/esnowkropla/iron_test); it's pretty functional, and the P/R/G problem is reasonably well illustrated because the code is so small.
-
-## Pure Hyper
-At this point I figured that for a simple CRUD app I don't necessarily need a complete web framework, maybe I can just work off of a bare HTTP server. I have already briefly mentioned [Hyper](https://hyper.rs/); it appears to be THE http server for Rust. After getting it set up and running through the tutorials though, I was confounded by complexity of the traits that are required to be implemented for fielding requests; Hyper appears to be in transition between blocking and async io, and the user interface is still a little hairy. In particular I'm going to need global mutable state at some point (the database), and getting the borrowing working correctly was proving more finicky than I would like.
-
-It was at this point that I considered going below even Hyper, and writing the HTTP server myself from scratch. This is silly; if I want to get anything done I shouldn't rewrite the whole stack myself. The other alternative would be to abandon Rust and just play around with Flask; I could at least build my web apps, even if I wasn't playing with a new(ish) language.
-
-Luckily for me though, as I was searching around for the solution to my latest problem I saw a code example of [Rocket](https://rocket.rs), which I had so quickly dismissed before; and I liked what I saw! Request routing, sessions handling, state handling, with a heavy emphasis on developer experience. A fair bit of magic in the code generation to handle the routing, but implementing the traits in the request guards and the serialization was REALLY easy. Converted, I started up a new project and threw Rocket into the Cargo.toml. This is long enough, so we'll leave off here; next week, actually building things!
+    &lt;p class="links"&gt;
+    
+      &lt;a href="/posts/campus.html"&gt;
+        &lt;small&gt;
+          &amp;laquo;Which side are we on?
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    
+      &lt;a href="/posts/rust-web2.html"&gt;
+        &lt;small&gt;
+          Thoughts on Rust Web-Development&amp;raquo;
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    &lt;/p&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
 </content>
     <id>https://www.kropla.ca/posts/rust-web.html</id>
     <title>Rust Web-Development, Part 1</title>
@@ -266,11 +489,43 @@ Luckily for me though, as I was searching around for the solution to my latest p
   </entry>
   <entry>
     <link rel="alternate" href="/posts/campus.html"/>
-    <content type="html">
-Background material:
+    <content type="html">&lt;article&gt;
+  &lt;h1&gt;&lt;a href="/posts/campus.html"&gt;Which side are we on?&lt;/a&gt;&lt;/h1&gt;
+  &lt;p class="subtitle"&gt;2017-07-14&lt;/p&gt;
+  &lt;small&gt;
+    
+      &lt;a href="/tags/culture-war"&gt;culture-war&lt;/a&gt;
+    
+  &lt;/small&gt;
+  &lt;section&gt;
+    &lt;p&gt;
+Background material:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+&lt;a href="http://nymag.com/selectall/2017/07/angela-nagles-kill-all-normies-the-alt-right-and-4chan.html"&gt;Review of Angela Nagle’s ‘Kill all normies’&lt;/a&gt;  &lt;/li&gt;
+  &lt;li&gt;
+&lt;a href="https://www.youtube.com/watch?v=2cMYfxOFBBM"&gt;Video of Evergreen University student protests&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
 
-  * [Review of Angela Nagle's 'Kill all normies'](http://nymag.com/selectall/2017/07/angela-nagles-kill-all-normies-the-alt-right-and-4chan.html)
-  * [Video of Evergreen University student protests](https://www.youtube.com/watch?v=2cMYfxOFBBM)
+
+    &lt;p class="links"&gt;
+    
+      &lt;a href="/posts/recessional.html"&gt;
+        &lt;small&gt;
+          &amp;laquo;Recessional
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    
+      &lt;a href="/posts/rust-web.html"&gt;
+        &lt;small&gt;
+          Rust Web-Development, Part 1&amp;raquo;
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    &lt;/p&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
 </content>
     <id>https://www.kropla.ca/posts/campus.html</id>
     <title>Which side are we on?</title>
@@ -278,10 +533,16 @@ Background material:
   </entry>
   <entry>
     <link rel="alternate" href="/posts/recessional.html"/>
-    <content type="html">
-
-```text
-God of our fathers, known of old,
+    <content type="html">&lt;article&gt;
+  &lt;h1&gt;&lt;a href="/posts/recessional.html"&gt;Recessional&lt;/a&gt;&lt;/h1&gt;
+  &lt;p class="subtitle"&gt;2017-07-10&lt;/p&gt;
+  &lt;small&gt;
+    
+      &lt;a href="/tags/poetry"&gt;poetry&lt;/a&gt;
+    
+  &lt;/small&gt;
+  &lt;section&gt;
+    &lt;pre&gt;&lt;code class="text"&gt;God of our fathers, known of old,
 Lord of our far-flung battle line,
 Beneath whose awful hand we hold
 Dominion over palm and pine -
@@ -316,8 +577,27 @@ And guarding calls not Thee to guard,
 For frantic boast and foolish word-
 Thy Mercy on Thy People, Lord!
 
--Rudyard Kipling
-```
+-Rudyard Kipling&lt;/code&gt;&lt;/pre&gt;
+
+
+    &lt;p class="links"&gt;
+    
+      &lt;a href="/posts/excelsior.html"&gt;
+        &lt;small&gt;
+          &amp;laquo;Excelsior
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    
+      &lt;a href="/posts/campus.html"&gt;
+        &lt;small&gt;
+          Which side are we on?&amp;raquo;
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    &lt;/p&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
 </content>
     <id>https://www.kropla.ca/posts/recessional.html</id>
     <title>Recessional</title>
@@ -325,16 +605,21 @@ Thy Mercy on Thy People, Lord!
   </entry>
   <entry>
     <link rel="alternate" href="/posts/excelsior.html"/>
-    <content type="html">
-
-&lt;pre&gt;
-&lt;code&gt;
-The shades of night were falling fast,
+    <content type="html">&lt;article&gt;
+  &lt;h1&gt;&lt;a href="/posts/excelsior.html"&gt;Excelsior&lt;/a&gt;&lt;/h1&gt;
+  &lt;p class="subtitle"&gt;2017-07-10&lt;/p&gt;
+  &lt;small&gt;
+    
+      &lt;a href="/tags/poetry"&gt;poetry&lt;/a&gt;
+    
+  &lt;/small&gt;
+  &lt;section&gt;
+    &lt;pre&gt;&lt;code&gt;The shades of night were falling fast,
 As through an Alpine village passed
 A youth, who bore, 'mid snow and ice,
 A banner with the strange device,
     Excelsior!
-	
+    
 His brow was sad; his eye beneath,
 Flashed like a falchion from its sheath,
 And like a silver clarion rung
@@ -383,9 +668,27 @@ And from the sky, serene and far,
 A voice fell like a falling star,
     Excelsior!
 
--Longfellow
-&lt;/code&gt;
-&lt;/pre&gt;
+-Longfellow&lt;/code&gt;&lt;/pre&gt;
+
+
+    &lt;p class="links"&gt;
+    
+      &lt;a href="/posts/first-blog-entry.html"&gt;
+        &lt;small&gt;
+          &amp;laquo;First Blog Entry
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    
+      &lt;a href="/posts/recessional.html"&gt;
+        &lt;small&gt;
+          Recessional&amp;raquo;
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    &lt;/p&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
 </content>
     <id>https://www.kropla.ca/posts/excelsior.html</id>
     <title>Excelsior</title>
@@ -393,8 +696,29 @@ A voice fell like a falling star,
   </entry>
   <entry>
     <link rel="alternate" href="/posts/first-blog-entry.html"/>
-    <content type="html">
-Alright, I've rejiggered my website yet again.  This actually has some functionality, so maybe I'll actually manage to stick to it this time.  Then again, the mark of a true academic is to neglect their website.
+    <content type="html">&lt;article&gt;
+  &lt;h1&gt;&lt;a href="/posts/first-blog-entry.html"&gt;First Blog Entry&lt;/a&gt;&lt;/h1&gt;
+  &lt;p class="subtitle"&gt;2017-07-07&lt;/p&gt;
+  &lt;small&gt;
+    
+  &lt;/small&gt;
+  &lt;section&gt;
+    &lt;p&gt;
+Alright, I’ve rejiggered my website yet again.  This actually has some functionality, so maybe I’ll actually manage to stick to it this time.  Then again, the mark of a true academic is to neglect their website.&lt;/p&gt;
+
+
+    &lt;p class="links"&gt;
+    
+    
+      &lt;a href="/posts/excelsior.html"&gt;
+        &lt;small&gt;
+          Excelsior&amp;raquo;
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    &lt;/p&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
 </content>
     <id>https://www.kropla.ca/posts/first-blog-entry.html</id>
     <title>First Blog Entry</title>
