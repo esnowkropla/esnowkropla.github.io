@@ -7,18 +7,49 @@
   </author>
   <id>https://www.kropla.ca/</id>
   <title>Elliot Snow-Kropla</title>
-  <updated>2024-07-10T00:23:44.382011Z</updated>
+  <updated>2024-08-01T14:41:33.062134Z</updated>
+  <entry>
+    <link rel="alternate" href="/posts/connect_to_postgres_socket.html"/>
+    <content type="html">
+
+For my side projects, I like to share one instance of postgres and connect to it over a socket, rather than fiddling with usernames and passwords or running dockerized postgres for each project or anything like that.  If you've `apt install`ed your postgres you also don't have to mess with `pg_hba.conf` to allow connections unlike with user/pass auth (has that changed since I learned this?  I don't know).
+
+For an elixir project using Ecto, it's not trivially obvious from the docs how to configure a socket connection rather than user/pass - the diff to `config/dev.exs` (and matching change to `config/test.exs`) you'll want looks like
+
+```
+--- a/config/dev.exs
++++ b/config/dev.exs
+@@ -2,9 +2,7 @@ import Config
+
+ # Configure your database
+ config :rk, Project.Repo,
+-  username: "postgres",
+-  password: "postgres",
+-  hostname: "localhost",
++  socket_dir: "/var/run/postgresql",
+   database: "project_dev",
+   stacktrace: true,
+   show_sensitive_data_on_connection_error: true,
+
+```
+
+Posted here so that _I_ won't need to go hunting around for this again in the future.
+</content>
+    <id>https://www.kropla.ca/posts/connect_to_postgres_socket.html</id>
+    <title>Connecting to postgres via a socket</title>
+    <updated>2024-08-01T14:25:22.588561Z</updated>
+  </entry>
   <entry>
     <link rel="alternate" href="/posts/2024-family-update.html"/>
     <content type="html">&lt;article&gt;
   &lt;h1&gt;&lt;a href="/posts/2024-family-update.html"&gt;2024 Family Update&lt;/a&gt;&lt;/h1&gt;
   &lt;p class="subtitle"&gt;2024-07-05&lt;/p&gt;
   &lt;small&gt;
-    
+
       &lt;a href="/tags/family"&gt;family&lt;/a&gt;
-    
+
       &lt;a href="/tags/photos"&gt;photos&lt;/a&gt;
-    
+
   &lt;/small&gt;
   &lt;section&gt;
     &lt;p&gt;
@@ -53,14 +84,14 @@ I started this site as a place to stash my resume, but now I can use it to show 
 
 
     &lt;p class="links"&gt;
-    
+
       &lt;a href="/posts/lunenberg-birthday-trip.html"&gt;
         &lt;small&gt;
           &amp;laquo;Lunenberg Birthday Trip
         &lt;/small&gt;
       &lt;/a&gt;
-    
-    
+
+
     &lt;/p&gt;
   &lt;/section&gt;
 &lt;/article&gt;
@@ -75,11 +106,11 @@ I started this site as a place to stash my resume, but now I can use it to show 
   &lt;h1&gt;&lt;a href="/posts/lunenberg-birthday-trip.html"&gt;Lunenberg Birthday Trip&lt;/a&gt;&lt;/h1&gt;
   &lt;p class="subtitle"&gt;2024-06-29&lt;/p&gt;
   &lt;small&gt;
-    
+
       &lt;a href="/tags/family"&gt;family&lt;/a&gt;
-    
+
       &lt;a href="/tags/photos"&gt;photos&lt;/a&gt;
-    
+
   &lt;/small&gt;
   &lt;section&gt;
     &lt;p&gt;
@@ -133,20 +164,20 @@ Kim seems to have had a pretty good time, which was the point.  We’re looking 
 
 
     &lt;p class="links"&gt;
-    
+
       &lt;a href="/posts/church-going.html"&gt;
         &lt;small&gt;
           &amp;laquo;Church Going
         &lt;/small&gt;
       &lt;/a&gt;
-    
-    
+
+
       &lt;a href="/posts/2024-family-update.html"&gt;
         &lt;small&gt;
           2024 Family Update&amp;raquo;
         &lt;/small&gt;
       &lt;/a&gt;
-    
+
     &lt;/p&gt;
   &lt;/section&gt;
 &lt;/article&gt;
@@ -161,9 +192,9 @@ Kim seems to have had a pretty good time, which was the point.  We’re looking 
   &lt;h1&gt;&lt;a href="/posts/church-going.html"&gt;Church Going&lt;/a&gt;&lt;/h1&gt;
   &lt;p class="subtitle"&gt;2020-06-16&lt;/p&gt;
   &lt;small&gt;
-    
+
       &lt;a href="/tags/poetry"&gt;poetry&lt;/a&gt;
-    
+
   &lt;/small&gt;
   &lt;section&gt;
     &lt;pre&gt;&lt;code&gt;Once I am sure there's nothing going on
@@ -184,7 +215,7 @@ Hectoring large-scale verses, and pronounce
 'Here endeth' much more loudly than I'd meant.
 The echoes snigger briefly. Back at the door
 I sign the book, donate an Irish sixpence,
-Reflect the place was not worth stopping for. 
+Reflect the place was not worth stopping for.
 
 Yet stop I did: in fact I often do,
 And always end much at a loss like this,
@@ -194,7 +225,7 @@ What we shall turn them into, if we shall keep
 A few cathedrals chronically on show,
 Their parchment, plate and pyx in locked cases,
 And let the rest rent-free to rain and sheep.
-Shall we avoid them as unlucky places? 
+Shall we avoid them as unlucky places?
 
 Or, after dark, will dubious women come
 To make their children touch a particular stone;
@@ -204,7 +235,7 @@ Power of some sort will go on
 In games, in riddles, seemingly at random;
 But superstition, like belief, must die,
 And what remains when disbelief has gone?
-Grass, weedy pavement, brambles, buttress, sky, 
+Grass, weedy pavement, brambles, buttress, sky,
 
 A shape less recognisable each week,
 A purpose more obscure. I wonder who
@@ -214,14 +245,14 @@ That tap and jot and know what rood-lofts were?
 Some ruin-bibber, randy for antique,
 Or Christmas-addict, counting on a whiff
 Of gown-and-bands and organ-pipes and myrrh?
-Or will he be my representative, 
+Or will he be my representative,
 
 Bored, uninformed, knowing the ghostly silt
 Dispersed, yet tending to this cross of ground
 Through suburb scrub because it held unspilt
 So long and equably what since is found
 Only in separation - marriage, and birth,
-And death, and thoughts of these - for which was built 
+And death, and thoughts of these - for which was built
 This special shell? For, though I've no idea
 What this accoutred frowsty barn is worth
 It pleases me to stand in silence here;
@@ -240,20 +271,20 @@ If only that so many dead lie round.
 
 
     &lt;p class="links"&gt;
-    
+
       &lt;a href="/posts/rust-web3.html"&gt;
         &lt;small&gt;
           &amp;laquo;A Rust Webserver
         &lt;/small&gt;
       &lt;/a&gt;
-    
-    
+
+
       &lt;a href="/posts/lunenberg-birthday-trip.html"&gt;
         &lt;small&gt;
           Lunenberg Birthday Trip&amp;raquo;
         &lt;/small&gt;
       &lt;/a&gt;
-    
+
     &lt;/p&gt;
   &lt;/section&gt;
 &lt;/article&gt;
@@ -268,15 +299,15 @@ If only that so many dead lie round.
   &lt;h1&gt;&lt;a href="/posts/rust-web3.html"&gt;A Rust Webserver&lt;/a&gt;&lt;/h1&gt;
   &lt;p class="subtitle"&gt;2018-09-01&lt;/p&gt;
   &lt;small&gt;
-    
+
       &lt;a href="/tags/programming"&gt;programming&lt;/a&gt;
-    
+
       &lt;a href="/tags/python"&gt;python&lt;/a&gt;
-    
+
       &lt;a href="/tags/rust"&gt;rust&lt;/a&gt;
-    
+
       &lt;a href="/tags/webdev"&gt;webdev&lt;/a&gt;
-    
+
   &lt;/small&gt;
   &lt;section&gt;
     &lt;p&gt;
@@ -319,20 +350,20 @@ to make this example a little less trivial, let’s give the server two behaviou
 
 
     &lt;p class="links"&gt;
-    
+
       &lt;a href="/posts/redrose.html"&gt;
         &lt;small&gt;
           &amp;laquo;A Red, Red Rose
         &lt;/small&gt;
       &lt;/a&gt;
-    
-    
+
+
       &lt;a href="/posts/church-going.html"&gt;
         &lt;small&gt;
           Church Going&amp;raquo;
         &lt;/small&gt;
       &lt;/a&gt;
-    
+
     &lt;/p&gt;
   &lt;/section&gt;
 &lt;/article&gt;
@@ -347,11 +378,11 @@ to make this example a little less trivial, let’s give the server two behaviou
   &lt;h1&gt;&lt;a href="/posts/redrose.html"&gt;A Red, Red Rose&lt;/a&gt;&lt;/h1&gt;
   &lt;p class="subtitle"&gt;2018-08-02&lt;/p&gt;
   &lt;small&gt;
-    
+
       &lt;a href="/tags/burns"&gt;burns&lt;/a&gt;
-    
+
       &lt;a href="/tags/poetry"&gt;poetry&lt;/a&gt;
-    
+
   &lt;/small&gt;
   &lt;section&gt;
     &lt;pre&gt;&lt;code&gt;O my Luve's like a red, red rose
@@ -376,20 +407,20 @@ Tho’ it were ten thousand mile.&lt;/code&gt;&lt;/pre&gt;
 
 
     &lt;p class="links"&gt;
-    
+
       &lt;a href="/posts/summer-lightning.html"&gt;
         &lt;small&gt;
           &amp;laquo;Summer Lightning
         &lt;/small&gt;
       &lt;/a&gt;
-    
-    
+
+
       &lt;a href="/posts/rust-web3.html"&gt;
         &lt;small&gt;
           A Rust Webserver&amp;raquo;
         &lt;/small&gt;
       &lt;/a&gt;
-    
+
     &lt;/p&gt;
   &lt;/section&gt;
 &lt;/article&gt;
@@ -404,11 +435,11 @@ Tho’ it were ten thousand mile.&lt;/code&gt;&lt;/pre&gt;
   &lt;h1&gt;&lt;a href="/posts/summer-lightning.html"&gt;Summer Lightning&lt;/a&gt;&lt;/h1&gt;
   &lt;p class="subtitle"&gt;2018-03-10&lt;/p&gt;
   &lt;small&gt;
-    
+
       &lt;a href="/tags/poetry"&gt;poetry&lt;/a&gt;
-    
+
       &lt;a href="/tags/wodehouse"&gt;wodehouse&lt;/a&gt;
-    
+
   &lt;/small&gt;
   &lt;section&gt;
     &lt;p&gt;
@@ -424,20 +455,20 @@ names.  Pretty silly it will make him feel, I rather fancy.&lt;/p&gt;
 
 
     &lt;p class="links"&gt;
-    
+
       &lt;a href="/posts/rust-web2.html"&gt;
         &lt;small&gt;
           &amp;laquo;Thoughts on Rust Web-Development
         &lt;/small&gt;
       &lt;/a&gt;
-    
-    
+
+
       &lt;a href="/posts/redrose.html"&gt;
         &lt;small&gt;
           A Red, Red Rose&amp;raquo;
         &lt;/small&gt;
       &lt;/a&gt;
-    
+
     &lt;/p&gt;
   &lt;/section&gt;
 &lt;/article&gt;
@@ -452,13 +483,13 @@ names.  Pretty silly it will make him feel, I rather fancy.&lt;/p&gt;
   &lt;h1&gt;&lt;a href="/posts/rust-web2.html"&gt;Thoughts on Rust Web-Development&lt;/a&gt;&lt;/h1&gt;
   &lt;p class="subtitle"&gt;2017-10-28&lt;/p&gt;
   &lt;small&gt;
-    
+
       &lt;a href="/tags/programming"&gt;programming&lt;/a&gt;
-    
+
       &lt;a href="/tags/rust"&gt;rust&lt;/a&gt;
-    
+
       &lt;a href="/tags/webdev"&gt;webdev&lt;/a&gt;
-    
+
   &lt;/small&gt;
   &lt;section&gt;
     &lt;p&gt;
@@ -476,20 +507,20 @@ Rust’s type safety gives is extremely hard to give up; working with Python I c
 
 
     &lt;p class="links"&gt;
-    
+
       &lt;a href="/posts/rust-web.html"&gt;
         &lt;small&gt;
           &amp;laquo;Rust Web-Development, Part 1
         &lt;/small&gt;
       &lt;/a&gt;
-    
-    
+
+
       &lt;a href="/posts/summer-lightning.html"&gt;
         &lt;small&gt;
           Summer Lightning&amp;raquo;
         &lt;/small&gt;
       &lt;/a&gt;
-    
+
     &lt;/p&gt;
   &lt;/section&gt;
 &lt;/article&gt;
@@ -504,13 +535,13 @@ Rust’s type safety gives is extremely hard to give up; working with Python I c
   &lt;h1&gt;&lt;a href="/posts/rust-web.html"&gt;Rust Web-Development, Part 1&lt;/a&gt;&lt;/h1&gt;
   &lt;p class="subtitle"&gt;2017-08-04&lt;/p&gt;
   &lt;small&gt;
-    
+
       &lt;a href="/tags/programming"&gt;programming&lt;/a&gt;
-    
+
       &lt;a href="/tags/rust"&gt;rust&lt;/a&gt;
-    
+
       &lt;a href="/tags/webdev"&gt;webdev&lt;/a&gt;
-    
+
   &lt;/small&gt;
   &lt;section&gt;
     &lt;p&gt;
@@ -521,10 +552,10 @@ Now, I don’t really know anything about web-development, so after a little res
 Framework Selection&lt;/h2&gt;
 &lt;p&gt;
 Much as I love writing everything myself, sometimes it makes sense to stand on the shoulders of giants. A combination of browsing the rust sub-reddit and searching the web suggested five initial candidates for a web framework:
-&lt;a href="https://github.com/nickel-org/nickel.rs"&gt;Nickel&lt;/a&gt;, 
-&lt;a href="https://ironframework.io"&gt;Iron&lt;/a&gt;, 
-&lt;a href="https://rocket.rs"&gt;Rocket&lt;/a&gt;, 
-&lt;a href="https://github.com/tomaka/rouille"&gt;Rouille&lt;/a&gt;, and 
+&lt;a href="https://github.com/nickel-org/nickel.rs"&gt;Nickel&lt;/a&gt;,
+&lt;a href="https://ironframework.io"&gt;Iron&lt;/a&gt;,
+&lt;a href="https://rocket.rs"&gt;Rocket&lt;/a&gt;,
+&lt;a href="https://github.com/tomaka/rouille"&gt;Rouille&lt;/a&gt;, and
 &lt;a href="https://github.com/fengsp/pencil"&gt;Pencil&lt;/a&gt;. The following is just my own personal experiences with each framework, and is definitely not meant to be the definitive objective guide to web developent in Rust. In particular, these are my fickle first impressions and snap judgements. Do your own research!&lt;/p&gt;
 &lt;h3&gt;
 Rocket&lt;/h3&gt;
@@ -551,20 +582,20 @@ Luckily for me though, as I was searching around for the solution to my latest p
 
 
     &lt;p class="links"&gt;
-    
+
       &lt;a href="/posts/campus.html"&gt;
         &lt;small&gt;
           &amp;laquo;Which side are we on?
         &lt;/small&gt;
       &lt;/a&gt;
-    
-    
+
+
       &lt;a href="/posts/rust-web2.html"&gt;
         &lt;small&gt;
           Thoughts on Rust Web-Development&amp;raquo;
         &lt;/small&gt;
       &lt;/a&gt;
-    
+
     &lt;/p&gt;
   &lt;/section&gt;
 &lt;/article&gt;
@@ -579,9 +610,9 @@ Luckily for me though, as I was searching around for the solution to my latest p
   &lt;h1&gt;&lt;a href="/posts/campus.html"&gt;Which side are we on?&lt;/a&gt;&lt;/h1&gt;
   &lt;p class="subtitle"&gt;2017-07-14&lt;/p&gt;
   &lt;small&gt;
-    
+
       &lt;a href="/tags/culture-war"&gt;culture-war&lt;/a&gt;
-    
+
   &lt;/small&gt;
   &lt;section&gt;
     &lt;p&gt;
@@ -595,20 +626,20 @@ Background material:&lt;/p&gt;
 
 
     &lt;p class="links"&gt;
-    
+
       &lt;a href="/posts/recessional.html"&gt;
         &lt;small&gt;
           &amp;laquo;Recessional
         &lt;/small&gt;
       &lt;/a&gt;
-    
-    
+
+
       &lt;a href="/posts/rust-web.html"&gt;
         &lt;small&gt;
           Rust Web-Development, Part 1&amp;raquo;
         &lt;/small&gt;
       &lt;/a&gt;
-    
+
     &lt;/p&gt;
   &lt;/section&gt;
 &lt;/article&gt;
@@ -623,9 +654,9 @@ Background material:&lt;/p&gt;
   &lt;h1&gt;&lt;a href="/posts/recessional.html"&gt;Recessional&lt;/a&gt;&lt;/h1&gt;
   &lt;p class="subtitle"&gt;2017-07-10&lt;/p&gt;
   &lt;small&gt;
-    
+
       &lt;a href="/tags/poetry"&gt;poetry&lt;/a&gt;
-    
+
   &lt;/small&gt;
   &lt;section&gt;
     &lt;pre&gt;&lt;code class="text"&gt;God of our fathers, known of old,
@@ -667,20 +698,20 @@ Thy Mercy on Thy People, Lord!
 
 
     &lt;p class="links"&gt;
-    
+
       &lt;a href="/posts/excelsior.html"&gt;
         &lt;small&gt;
           &amp;laquo;Excelsior
         &lt;/small&gt;
       &lt;/a&gt;
-    
-    
+
+
       &lt;a href="/posts/campus.html"&gt;
         &lt;small&gt;
           Which side are we on?&amp;raquo;
         &lt;/small&gt;
       &lt;/a&gt;
-    
+
     &lt;/p&gt;
   &lt;/section&gt;
 &lt;/article&gt;
@@ -695,9 +726,9 @@ Thy Mercy on Thy People, Lord!
   &lt;h1&gt;&lt;a href="/posts/excelsior.html"&gt;Excelsior&lt;/a&gt;&lt;/h1&gt;
   &lt;p class="subtitle"&gt;2017-07-10&lt;/p&gt;
   &lt;small&gt;
-    
+
       &lt;a href="/tags/poetry"&gt;poetry&lt;/a&gt;
-    
+
   &lt;/small&gt;
   &lt;section&gt;
     &lt;pre&gt;&lt;code&gt;The shades of night were falling fast,
@@ -705,7 +736,7 @@ As through an Alpine village passed
 A youth, who bore, 'mid snow and ice,
 A banner with the strange device,
     Excelsior!
-    
+
 His brow was sad; his eye beneath,
 Flashed like a falchion from its sheath,
 And like a silver clarion rung
@@ -758,20 +789,20 @@ A voice fell like a falling star,
 
 
     &lt;p class="links"&gt;
-    
+
       &lt;a href="/posts/first-blog-entry.html"&gt;
         &lt;small&gt;
           &amp;laquo;First Blog Entry
         &lt;/small&gt;
       &lt;/a&gt;
-    
-    
+
+
       &lt;a href="/posts/recessional.html"&gt;
         &lt;small&gt;
           Recessional&amp;raquo;
         &lt;/small&gt;
       &lt;/a&gt;
-    
+
     &lt;/p&gt;
   &lt;/section&gt;
 &lt;/article&gt;
@@ -786,7 +817,7 @@ A voice fell like a falling star,
   &lt;h1&gt;&lt;a href="/posts/first-blog-entry.html"&gt;First Blog Entry&lt;/a&gt;&lt;/h1&gt;
   &lt;p class="subtitle"&gt;2017-07-07&lt;/p&gt;
   &lt;small&gt;
-    
+
   &lt;/small&gt;
   &lt;section&gt;
     &lt;p&gt;
@@ -794,14 +825,14 @@ Alright, I’ve rejiggered my website yet again.  This actually has some functio
 
 
     &lt;p class="links"&gt;
-    
-    
+
+
       &lt;a href="/posts/excelsior.html"&gt;
         &lt;small&gt;
           Excelsior&amp;raquo;
         &lt;/small&gt;
       &lt;/a&gt;
-    
+
     &lt;/p&gt;
   &lt;/section&gt;
 &lt;/article&gt;
