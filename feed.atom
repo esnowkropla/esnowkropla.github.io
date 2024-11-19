@@ -7,7 +7,101 @@
   </author>
   <id>https://www.kropla.ca/</id>
   <title>Elliot Snow-Kropla</title>
-  <updated>2024-08-01T14:48:22.351051Z</updated>
+  <updated>2024-11-19T17:23:38.822013Z</updated>
+  <entry>
+    <link rel="alternate" href="/posts/musquodoboit-harbour-trip.html"/>
+    <content type="html">&lt;article&gt;
+  &lt;h1&gt;&lt;a href="/posts/musquodoboit-harbour-trip.html"&gt;Musquodoboit Harbour Trip&lt;/a&gt;&lt;/h1&gt;
+  &lt;p class="subtitle"&gt;2024-08-11&lt;/p&gt;
+  &lt;small&gt;
+    
+      &lt;a href="/tags/family"&gt;family&lt;/a&gt;
+    
+      &lt;a href="/tags/photos"&gt;photos&lt;/a&gt;
+    
+  &lt;/small&gt;
+  &lt;section&gt;
+    &lt;p&gt;
+For a slightly belated birthday trip for me we drove out to Musquodoboit Harbour, since Kim hadn’t explored the Eastern Shore at all before.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;label class="margin-toggle" for="sn-market"&gt;⊕&lt;/label&gt;
+&lt;input id="sn-market" class="margin-toggle" type="checkbox"/&gt;
+&lt;span class="marginnote"&gt;
+
+  Musquodoboit Harbour farmer's market.
+
+&lt;/span&gt;
+  &lt;img class="photo" src="/img/musq-2024-08-11/musq-1-small.jpg" /&gt;&lt;/figure&gt;
+&lt;p&gt;
+We checked out the farmer’s market, which had a lot of cute vendors and some lovely music in the park.  We had fish and chips for lunch at &lt;a href="https://www.facebook.com/profile.php?id=100057378222408"&gt;Harbour Fish n Fries&lt;/a&gt; which Kim said was the best battered fish she’d ever had.  She remains consistently surprised at the quality of the fish in Nova Scotia - I figure there’s got to be some compensation for being stuck off of the dege of the continent into the middle of the ocean.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;label class="margin-toggle" for="sn-market5"&gt;⊕&lt;/label&gt;
+&lt;input id="sn-market5" class="margin-toggle" type="checkbox"/&gt;
+&lt;span class="marginnote"&gt;
+
+  Fish and Chips at &lt;a href="https://www.facebook.com/profile.php?id=100057378222408"&gt;Harbour Fish N Fries&lt;/a&gt;.
+
+&lt;/span&gt;
+  &lt;img class="photo" src="/img/musq-2024-08-11/musq-5-small.jpg" /&gt;&lt;/figure&gt;
+&lt;p&gt;
+The farmer’s market takes place next to the old train station, now in use as a museum and the local HRM consituency office since we’ve ripped up the train tracks.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;label class="margin-toggle" for="sn-market6"&gt;⊕&lt;/label&gt;
+&lt;input id="sn-market6" class="margin-toggle" type="checkbox"/&gt;
+&lt;span class="marginnote"&gt;
+
+  The gorgeous old train station.  It would have been wonderful to have taken the train out here, like we could have one hundred years ago.  Sad!
+
+&lt;/span&gt;
+  &lt;img class="photo" src="/img/musq-2024-08-11/musq-6-small.jpg" /&gt;&lt;/figure&gt;
+&lt;figure&gt;
+    &lt;label class="margin-toggle" for="sn-market3"&gt;⊕&lt;/label&gt;
+&lt;input id="sn-market3" class="margin-toggle" type="checkbox"/&gt;
+&lt;span class="marginnote"&gt;
+
+  Freddie inspecting the lobster traps.
+
+&lt;/span&gt;
+  &lt;img class="photo" src="/img/musq-2024-08-11/musq-3-small.jpg" /&gt;&lt;/figure&gt;
+&lt;figure&gt;
+    &lt;label class="margin-toggle" for="sn-market4"&gt;⊕&lt;/label&gt;
+&lt;input id="sn-market4" class="margin-toggle" type="checkbox"/&gt;
+&lt;span class="marginnote"&gt;
+
+  Riding on Papa after the little legs have given out.
+
+&lt;/span&gt;
+  &lt;img class="photo" src="/img/musq-2024-08-11/musq-4-small.jpg" /&gt;&lt;/figure&gt;
+&lt;p&gt;
+Rounded off the trip with some ice cream.  A great day all round, even if we were a little late back for nap time.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;label class="margin-toggle" for="sn-market2"&gt;⊕&lt;/label&gt;
+&lt;input id="sn-market2" class="margin-toggle" type="checkbox"/&gt;
+&lt;span class="marginnote"&gt;
+
+  Pointing the way to &lt;a href="https://www.facebook.com/PolarBearExpressIceCream"&gt;Polar Bear Express&lt;/a&gt; ice cream.
+
+&lt;/span&gt;
+  &lt;img class="photo" src="/img/musq-2024-08-11/musq-2-small.jpg" /&gt;&lt;/figure&gt;
+
+
+    &lt;p class="links"&gt;
+    
+      &lt;a href="/posts/connect_to_postgres_socket.html"&gt;
+        &lt;small&gt;
+          &amp;laquo;Connecting to postgres via a socket
+        &lt;/small&gt;
+      &lt;/a&gt;
+    
+    
+    &lt;/p&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
+</content>
+    <id>https://www.kropla.ca/posts/musquodoboit-harbour-trip.html</id>
+    <title>Musquodoboit Harbour Trip</title>
+    <updated>2024-08-11T19:31:56.925963Z</updated>
+  </entry>
   <entry>
     <link rel="alternate" href="/posts/connect_to_postgres_socket.html"/>
     <content type="html">&lt;article&gt;
@@ -51,6 +145,12 @@ Posted here so that &lt;em&gt;I&lt;/em&gt; won’t need to go hunting around for
         &lt;/small&gt;
       &lt;/a&gt;
     
+    
+      &lt;a href="/posts/musquodoboit-harbour-trip.html"&gt;
+        &lt;small&gt;
+          Musquodoboit Harbour Trip&amp;raquo;
+        &lt;/small&gt;
+      &lt;/a&gt;
     
     &lt;/p&gt;
   &lt;/section&gt;
