@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/css/tufte.css"/>
+    <link rel="stylesheet" href="/css/kropla.css"/>
+    <title>kropla.ca</title>
+  </head>
+  <body>
+    <h2 class="title">Elliot Snow-Kropla</h2>
+    <nav class="sans">
+      <ul class="site-nav">
+        <li><a class="no-tufte-underline" href="/">Home</a></li>
+        <li><a class="no-tufte-underline" href="/projects">Projects</a></li>
+        <li><a class="no-tufte-underline" href="/posts">Blog</a></li>
+        <li><a class="no-tufte-underline" href="/feed.atom">Feed</a></li>
+        <li><a class="no-tufte-underline" href="/eskcv.pdf">CV</a></li>
+      </ul>
+    </nav>
+    <article>
+  <h1><a href="/posts/connect_to_postgres_socket.html">Connecting to postgres via a socket</a></h1>
+  <p class="subtitle">2024-08-01</p>
+  <small>
+    
+      <a href="/tags/elixir">elixir</a>
+    
+      <a href="/tags/programming">programming</a>
+    
+  </small>
+  <section>
+    <p>
+For my side projects, I like to share one instance of postgres and connect to it over a socket, rather than fiddling with usernames and passwords or running dockerized postgres for each project or anything like that.  If you’ve <code class="inline">apt install</code>ed your postgres you also don’t have to mess with <code class="inline">pg_hba.conf</code> to allow connections unlike with user/pass auth (has that changed since I learned this?  I don’t know).</p>
+<p>
+For an elixir project using Ecto, it’s not trivially obvious from the docs how to configure a socket connection rather than user/pass - the diff to <code class="inline">config/dev.exs</code> (and matching change to <code class="inline">config/test.exs</code>) you’ll want looks like</p>
+<pre><code>--- a/config/dev.exs
++++ b/config/dev.exs
+@@ -2,9 +2,7 @@ import Config
+
+ # Configure your database
+ config :rk, Project.Repo,
+-  username: &quot;postgres&quot;,
+-  password: &quot;postgres&quot;,
+-  hostname: &quot;localhost&quot;,
++  socket_dir: &quot;/var/run/postgresql&quot;,
+   database: &quot;project_dev&quot;,
+   stacktrace: true,
+   show_sensitive_data_on_connection_error: true,
+</code></pre>
+<p>
+Posted here so that <em>I</em> won’t need to go hunting around for this again in the future.</p>
+
+
+    <p class="links">
+    
+      <a href="/posts/2024-family-update.html">
+        <small>
+          &laquo;2024 Family Update
+        </small>
+      </a>
+    
+    
+      <a href="/posts/musquodoboit-harbour-trip.html">
+        <small>
+          Musquodoboit Harbour Trip&raquo;
+        </small>
+      </a>
+    
+    </p>
+  </section>
+</article>
+
+  </body>
+  <footer>
+    &copy; Elliot Snow-Kropla 2025
+  </footer>
+</html>

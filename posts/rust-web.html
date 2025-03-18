@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/css/tufte.css"/>
+    <link rel="stylesheet" href="/css/kropla.css"/>
+    <title>kropla.ca</title>
+  </head>
+  <body>
+    <h2 class="title">Elliot Snow-Kropla</h2>
+    <nav class="sans">
+      <ul class="site-nav">
+        <li><a class="no-tufte-underline" href="/">Home</a></li>
+        <li><a class="no-tufte-underline" href="/projects">Projects</a></li>
+        <li><a class="no-tufte-underline" href="/posts">Blog</a></li>
+        <li><a class="no-tufte-underline" href="/feed.atom">Feed</a></li>
+        <li><a class="no-tufte-underline" href="/eskcv.pdf">CV</a></li>
+      </ul>
+    </nav>
+    <article>
+  <h1><a href="/posts/rust-web.html">Rust Web-Development, Part 1</a></h1>
+  <p class="subtitle">2017-08-04</p>
+  <small>
+    
+      <a href="/tags/programming">programming</a>
+    
+      <a href="/tags/rust">rust</a>
+    
+      <a href="/tags/webdev">webdev</a>
+    
+  </small>
+  <section>
+    <p>
+Now that <a href="http://store.steampowered.com/app/405240">Hairy Little Buggers</a> is wrapped up, I figured I’d use my sabbatical to dive into web-development. This is also a good chance to play with <a href="http://rust-lang.org">Rust</a> again; the last time I checked it out was before 1.0 when I was playing with the <a href="http://cryptopals.com/">Matasano crypto challenges</a>, so it will be interesting to see how much more mature the ecosystem is.</p>
+<p>
+Now, I don’t really know anything about web-development, so after a little research I picked up <a href="https://www.amazon.ca/Flask-Web-Development-Developing-Applications/dp/1449372627/ref=sr_1_sc_1?ie=UTF8&qid=1501866858&sr=8-1-spell">Flask Web Development</a> based on the <a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world">Flask Mega-Tutorial</a>. I know Python fairly well so I can mentally translate the Python into Rust, and <a href="http://flask.pocoo.org">Flask</a> seems like the framework I would pick were I to write a web app in Python. </p>
+<h2>
+Framework Selection</h2>
+<p>
+Much as I love writing everything myself, sometimes it makes sense to stand on the shoulders of giants. A combination of browsing the rust sub-reddit and searching the web suggested five initial candidates for a web framework:
+<a href="https://github.com/nickel-org/nickel.rs">Nickel</a>, 
+<a href="https://ironframework.io">Iron</a>, 
+<a href="https://rocket.rs">Rocket</a>, 
+<a href="https://github.com/tomaka/rouille">Rouille</a>, and 
+<a href="https://github.com/fengsp/pencil">Pencil</a>. The following is just my own personal experiences with each framework, and is definitely not meant to be the definitive objective guide to web developent in Rust. In particular, these are my fickle first impressions and snap judgements. Do your own research!</p>
+<h3>
+Rocket</h3>
+<p>
+Rocket requires the use of the <code class="inline">nightly</code> compiler, which annoys me.  A pretty decent fraction of common packages in the Rust ecosystem seemingly still rely on <code class="inline">nightly</code> rather than <code class="inline">stable</code>. Using Rust in production is already questionable given it’s novelty, and using the <code class="inline">nightly</code> version of the compiler strikes me as a bridge too far. So Rocket’s out.</p>
+<h3>
+Rouille and Pencil</h3>
+<p>
+Rouille and Pencil are smaller frameworks, which aligns with my desire to do most of the programming and component selection myself rather than delegating to a monster framework like Rails or Django, so I tried them out next.  Both seem pretty immature though, so after getting my <code class="inline">hello-world</code> servers up and running it seemed like I would have to build a <em>lot</em> myself. At that point the impedance mismatch between my code and the framework makes me want to just write the framework part myself as well. Scratch these two off the list.</p>
+<h3>
+Nickel and Iron</h3>
+<p>
+Nickel and Iron seem pretty similar, with more of a batteries-included philosophy then Rouille or Pencil. Iron seems more mature and seems to have more development activity around it, so I picked Iron (sorry Nickel).</p>
+<p>
+I got templating working with <a href="https://github.com/sunng87">handlebars-iron</a>, and was messing around with sessions and forms when I stumbled upon a bug I could not solve. Implementing <a href="https://en.wikipedia.org/wiki/Post/Redirect/Get">Post/Redirect/Get</a> resulted in something in the stack (I’m not sure if it was <a href="https://github.com/hyperium/hyper">Hyper</a> or Iron) parsing the incoming GET request as <code class="inline">Method::Extension(user=USERNAME&amp;password=PASSWDGET)</code>, rather than what I would expect <code class="inline">Method::Get</code>. It looks like Iron is interpreting the form data as part of the method? Forms a pretty common part of a web app, one would think they would work pretty well. Iron includes handlers to redirect, and a <code class="inline">url_for</code> function to find the address of routes. After a couple of days of not being able to find a problem on my end, I gave up on Iron. The next step was to start debugging <a href="https://ironframework.io">Iron</a> and <a href="https://github.com/hyperium/hyper">Hyper</a> code to figure out why they’re not parsing the http request correctly, and pretty much the whole point of a framework is to avoid parsing request headers yourself. You can check out the final state of my iron experiment <a href="https://github.com/esnowkropla/iron_test">here</a>; it’s pretty functional, and the P/R/G problem is reasonably well illustrated because the code is so small.</p>
+<h2>
+Pure Hyper</h2>
+<p>
+At this point I figured that for a simple CRUD app I don’t necessarily need a complete web framework, maybe I can just work off of a bare HTTP server. I have already briefly mentioned <a href="https://hyper.rs/">Hyper</a>; it appears to be THE http server for Rust. After getting it set up and running through the tutorials though, I was confounded by complexity of the traits that are required to be implemented for fielding requests; Hyper appears to be in transition between blocking and async io, and the user interface is still a little hairy. In particular I’m going to need global mutable state at some point (the database), and getting the borrowing working correctly was proving more finicky than I would like.</p>
+<p>
+It was at this point that I considered going below even Hyper, and writing the HTTP server myself from scratch. This is silly; if I want to get anything done I shouldn’t rewrite the whole stack myself. The other alternative would be to abandon Rust and just play around with Flask; I could at least build my web apps, even if I wasn’t playing with a new(ish) language.</p>
+<p>
+Luckily for me though, as I was searching around for the solution to my latest problem I saw a code example of <a href="https://rocket.rs">Rocket</a>, which I had so quickly dismissed before; and I liked what I saw! Request routing, sessions handling, state handling, with a heavy emphasis on developer experience. A fair bit of magic in the code generation to handle the routing, but implementing the traits in the request guards and the serialization was REALLY easy. Converted, I started up a new project and threw Rocket into the Cargo.toml. This is long enough, so we’ll leave off here; next week, actually building things!</p>
+
+
+    <p class="links">
+    
+      <a href="/posts/campus.html">
+        <small>
+          &laquo;Which side are we on?
+        </small>
+      </a>
+    
+    
+      <a href="/posts/rust-web2.html">
+        <small>
+          Thoughts on Rust Web-Development&raquo;
+        </small>
+      </a>
+    
+    </p>
+  </section>
+</article>
+
+  </body>
+  <footer>
+    &copy; Elliot Snow-Kropla 2025
+  </footer>
+</html>
